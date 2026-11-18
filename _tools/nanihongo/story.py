@@ -14,11 +14,11 @@ async def main():
         for s in slugs:
             src=f"{REPO}/nanihongo-{s}/s1.jpg"
             d=base64.b64encode(open(src,'rb').read()).decode()
-            html=f"<html><head><meta charset='utf-8'><style>{CSS}</style></head><body><div class='sun' style='width:520px;height:520px;right:-180px;top:-160px'></div><div class='sun' style='width:300px;height:300px;left:-120px;bottom:-110px'></div><span class='tag'>POST BARU DI FEED</span><img src='data:image/jpeg;base64,{d}'><div class='ft'>Geser & save di feed ya 🇯🇵</div></body></html>"
+            html=f"<html><head><meta charset='utf-8'><style>{CSS}</style></head><body><div class='sun' style='width:520px;height:520px;right:-180px;top:-160px'></div><div class='sun' style='width:300px;height:300px;left:-120px;bottom:-110px'></div><img src='data:image/jpeg;base64,{d}'><div class='ft'>Geser & save di feed ya 🇯🇵</div></body></html>"
             await pg.set_content(html); await pg.wait_for_timeout(200)
             os.makedirs(f"{REPO}/nanihongo-{s}",exist_ok=True)
             await pg.screenshot(path=f"/home/claude/nanihongo/story/{s}.png")
             from PIL import Image
-            Image.open(f"/home/claude/nanihongo/story/{s}.png").convert('RGB').save(f"{REPO}/nanihongo-{s}/story.jpg",quality=92)
+            Image.open(f"/home/claude/nanihongo/story/{s}.png").convert('RGB').save(f"{REPO}/nanihongo-{s}/story2.jpg",quality=92)
         await b.close()
 asyncio.run(main())
