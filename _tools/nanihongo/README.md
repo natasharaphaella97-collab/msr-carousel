@@ -8,3 +8,5 @@ Copy this folder to /home/claude/nanihongo (keeps the same paths the scripts exp
 - cs/gen2.py      : vocab() rows (JP / romaji / arti) + "Cheat Sheet" posts (21:00 WIB slot)
 
 Output: 1080x1350 PNG -> JPG q92, pushed to nanihongo-<slug>/s1..sN.jpg
+
+- story.py       : bikin versi story 1080x1920 dari s1.jpg. Jalankan: python3 story.py <slug1> <slug2> ... (slug = nama folder tanpa "nanihongo-"). Output: nanihongo-<slug>/story.jpg
