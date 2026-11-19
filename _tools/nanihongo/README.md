@@ -9,4 +9,4 @@ Copy this folder to /home/claude/nanihongo (keeps the same paths the scripts exp
 
 Output: 1080x1350 PNG -> JPG q92, pushed to nanihongo-<slug>/s1..sN.jpg
 
-- story.py       : bikin versi story 1080x1920 dari s1.jpg. Jalankan: python3 story.py <slug1> <slug2> ... (slug = nama folder tanpa "nanihongo-"). Output: nanihongo-<slug>/story.jpg (cover full-bleed, tanpa teks tambahan)
+- story.py       : bikin story 1080x1920 untuk SEMUA slide. Jalankan: python3 story.py <slug1> <slug2> ... Output: nanihongo-<slug>/st1.jpg..stN.jpg. Jadwalkan 1 STORY post per slide: st1 di +15 menit setelah carousel, lalu st2, st3... tiap +1 menit.
