@@ -10,3 +10,5 @@ Copy this folder to /home/claude/nanihongo (keeps the same paths the scripts exp
 Output: 1080x1350 PNG -> JPG q92, pushed to nanihongo-<slug>/s1..sN.jpg
 
 - story.py       : bikin story 1080x1920 untuk SEMUA slide. Jalankan: python3 story.py <slug1> <slug2> ... Output: nanihongo-<slug>/st1.jpg..stN.jpg. Jadwalkan 1 STORY post per slide: st1 di +15 menit setelah carousel, lalu st2, st3... tiap +1 menit.
+
+- photos/: foto stok yang sudah dibayar (pakai ulang, JANGAN generate baru): p_cash.jpg (bayar cash di kasir), p_ic.jpg (tap kartu IC di gate stasiun), p_qr.jpg (HP scan QR di kasir), p_card.jpg (kartu debit di mesin). Contoh pakai: pay01_gen.py (photo(), pcover()).
