@@ -12,6 +12,17 @@ CSS += """
 .tr{display:flex;flex-wrap:wrap;gap:14px;align-items:center;padding:20px 0 20px 26px}
 .tr span{background:#1B2340;color:#F6F1E7;font-weight:800;font-size:38px;padding:12px 22px;border-radius:12px}
 """
+def lg(n): return "data:image/png;base64,"+base64.b64encode(open(f"/home/claude/nanihongo/pay01/logo/{n}.png","rb").read()).decode()
+CSS += """
+.lt{display:flex;flex-direction:column;align-items:center;gap:6px}
+.lt img{height:118px;background:#fff;border-radius:16px;padding:8px;box-shadow:0 4px 12px rgba(27,35,64,.15)}
+.lt b{font-size:30px;font-weight:800;color:#1B2340}
+.tier .tr{gap:22px;padding:22px 0 22px 26px}
+"""
+def ltiers(tag, rows):
+    cols = {'S':'#C8102E','A':'#E0573B','B':'#4A5A86','C':'#8A90A6'}
+    r = "".join(f"<div class='tier'><div class='tl' style='background:{cols[k]}'>{k}</div><div class='tr'>{''.join(f'<div class=lt><img src={lg(n)}><b>{lab}</b></div>' for n, lab in xs)}</div></div>" for k, xs in rows)
+    return f"<body><div class='pad' style='top:150px'><span class='tag'>{tag}</span><div style='margin-top:36px;border-top:3px solid #1B2340'>{r}</div></div></body>"
 def tiers(tag, rows):
     cols = {'S':'#C8102E','A':'#E0573B','B':'#4A5A86','C':'#8A90A6'}
     r = "".join(f"<div class='tier'><div class='tl' style='background:{cols[k]}'>{k}</div><div class='tr'>{''.join(f'<span>{x}</span>' for x in xs)}</div></div>" for k, xs in rows)
@@ -32,7 +43,7 @@ def pcover(n, tag, head, sub):
 slides = [
  pcover("ic", "TIER LIST 2026", "Di Jepang bayar pakai apa? " + PINK.format("Tier list") + " versi 2026.", "Biar nggak panik di depan kasir."),
  photo("cash", "JEPANG BELUM FULL CASHLESS", R.format("58%") + " transaksi udah cashless.", "Data 2025. Artinya ±4 dari 10 yen masih dibayar tunai. Tetap bawa cash."),
- tiers("TIER LIST BAYAR DI JEPANG", [('S', ['Suica / PASMO / ICOCA', 'Cash']), ('A', ['PayPay']), ('B', ['Debit Visa', 'Mastercard']), ('C', ['QRIS'])]),
+ ltiers("TIER LIST BAYAR DI JEPANG", [('S', [('ic','Kartu IC'), ('cash','Cash')]), ('A', [('paypay','PayPay')]), ('B', [('visa','Visa'), ('mc','Mastercard')]), ('C', [('qris','QRIS')])]),
  photo("ic", "TIER S", "Kartu IC " + R.format("+ cash."), "Suica, PASMO, ICOCA: 1 kartu buat kereta, bus, konbini, vending machine.", "Pakai iPhone? Suica bisa langsung ditambah di Apple Wallet."),
  photo("qr", "TIER A", R.format("PayPay."), "Dipakai 75 juta+ orang di Jepang.", "Cocok buat yang udah kerja di sana. Daftarnya umumnya butuh nomor HP Jepang."),
  photo("card", "TIER B &amp; C", "Cadangan: " + PINK.format("kartu &amp; QRIS."), "Debit Visa/Mastercard: aman di toko besar &amp; konbini. Warung kecil sering cash only.", "QRIS: bisa sejak Agustus 2025, tapi tokonya masih terbatas.", dark=True),
