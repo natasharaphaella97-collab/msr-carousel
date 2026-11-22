@@ -6,7 +6,7 @@ Tujuan: tiap hari ada 1 foto produk Nail Lab / Usagi Utopia di Google Business P
 - `brand.py` — `brand_tall(src, out, title, subtitle)`: header putih + logo Usagi Utopia kiri + nama produk kanan + garis pink, foto utuh di bawah. Font Poppins.
 - `UsagiUtopia.jpg` — logo.
 - `products.json` — daftar produk yang BENAR dijual (dari foto Nana). Cadangan Canva hanya boleh pakai produk dari sini.
-- `log.json` — riwayat: tanggal, file, produk, sumber (inbox/canva/reuse). Dipakai supaya produk nggak diulang <14 hari.
+- `log.json` — {"_last_notify": tanggal notif terakhir ke Nana, "entries": [...]} riwayat: tanggal, file, produk, sumber (inbox/canva/reuse). Dipakai supaya produk nggak diulang <14 hari.
 - `../inbox/` — foto mentah dari Nana yang belum diproses. Kalau Nana kirim foto produk di chat, push mentahnya ke sini (nama file = nama produk kalau tahu, contoh `party-top-coat__raw.jpg`), dan tulis nama produknya di `../inbox/NOTES.md`.
 
 ## Aturan gambar
