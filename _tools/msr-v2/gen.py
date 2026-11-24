@@ -16,6 +16,7 @@ body{{width:1080px;height:1440px;overflow:hidden;position:relative;background:#f
 radial-gradient(circle at 8% 32%,transparent 419px,#EEE 420px,#EEE 422px,transparent 423px),
 radial-gradient(circle at 96% 62%,transparent 499px,#EEE 500px,#EEE 502px,transparent 503px)}}
 .hd{{position:absolute;left:56px;top:56px;display:flex;align-items:center;gap:22px}}
+.mono{{width:104px;height:104px;border-radius:50%;background:#141414;color:#fff;display:flex;align-items:center;justify-content:center;font-family:'Inter Display';font-weight:900;font-size:56px;letter-spacing:-.04em}}
 .hd img{{width:104px;height:104px;border-radius:50%;border:4px solid #141414;object-fit:cover}}
 .hd b{{display:block;font-family:'Inter Display';font-weight:900;font-size:40px;letter-spacing:-.02em}}
 .hd span{{font-size:30px;color:#777}}
@@ -39,25 +40,35 @@ h1 .l{{display:block;white-space:nowrap}}
 .ai .who{{font-weight:800;color:{RED};font-size:30px;margin-bottom:6px}}
 table{{width:100%;border-collapse:collapse;font-size:40px}}
 td{{padding:14px 0}} td:last-child{{text-align:right;font-weight:800}}
+body.or{{background:#F2552C;color:#fff}}
+body.or .rings{{opacity:.25;filter:invert(1)}}
+body.or .hd span{{color:rgba(255,255,255,.85)}}
+body.or .mono{{background:#fff;color:#F2552C}}
+body.or .cnt{{border-color:rgba(255,255,255,.5)}} body.or .cnt i{{color:rgba(255,255,255,.6)}}
+body.or .kick:before,body.or .kick:after{{background:rgba(255,255,255,.6)}}
+body.or h1 .r{{background:none;-webkit-background-clip:initial;color:#141414}}
+body.or .note{{color:#fff}} body.or .note b{{color:#141414!important}}
+body.or .card,body.or .win{{color:#141414;border-color:transparent;box-shadow:0 18px 40px rgba(120,30,0,.25)}}
 tr.t td{{border-top:3px dashed #DDD;padding-top:22px;color:{RED};font-weight:900}}
 """
 BARS='<div class=bar><i style="background:#FF5F57"></i><i style="background:#FEBC2E"></i><i style="background:#28C840"></i><span style="margin:0 auto">{}</span></div>'
 ICOBG=['#EAF1FF','#FFF3D6','#FFE4E4','#E6F7EA']
 
-def head(n,N): return f'<div class=rings></div><div class=hd><img src="{AV}"><div><b>Nana</b><span>@manusiaslowrespond</span></div></div><div class=cnt>0{n} <i>/ 0{N}</i></div>'
+def head(n,N): return f'<div class=rings></div><div class=hd><div class=mono>M</div><div><b>Nana</b><span>@manusiaslowrespond</span></div></div><div class=cnt>0{n} <i>/ 0{N}</i></div>'
 def h1(a,b,top,size=118): return f'<h1 style="top:{top}px;font-size:{size}px" data-fit><span class=l>{a}</span><span class="l r">{b}</span></h1>'
 
 def cover(p):
     c=p['cover']
+    pill='#F3F3F3;color:#555' if not p.get('orange') else 'rgba(255,255,255,.2);color:#fff'
+    line='#141414' if p.get('orange') else RED
     return f"""<div class=rings></div>
-<div style="position:absolute;left:0;right:0;top:78px;text-align:center"><span style="background:#F3F3F3;border-radius:12px;padding:8px 22px;font-size:30px;font-weight:700;color:#555">Cuan pakai AI</span></div>
+<div style="position:absolute;left:0;right:0;top:78px;text-align:center"><span style="background:{pill};border-radius:12px;padding:8px 22px;font-size:30px;font-weight:700">Cuan pakai AI</span></div>
 {h1(c['a'],c['b'],150,140)}
-<svg style="position:absolute;left:190px;top:490px" width="700" height="30"><path d="M5 20 Q350 2 695 16" stroke="{RED}" stroke-width="8" fill="none" stroke-linecap="round"/></svg>
-<div style="position:absolute;right:-50px;bottom:0;width:740px;height:860px;background:url({CUTS[p['photo']]}) center bottom/contain no-repeat"></div>
-<div class=card style="position:absolute;left:56px;top:640px;width:480px;padding:30px;transform:rotate(-3deg)">
-<div style="display:flex;align-items:center;gap:16px;margin-bottom:20px"><div class=ico style="width:70px;height:70px;font-size:36px;background:#FFE7DC">{c['ico']}</div><b style="font-size:34px;line-height:1.2">{c['t']}</b></div>
-<div style="background:#F1F1F1;border-radius:20px;padding:16px 20px;font-size:32px;line-height:1.35">{c['q']}</div>
-<div style="background:#DCF8C6;border-radius:20px;padding:16px 20px;font-size:32px;line-height:1.35;margin-top:14px;margin-left:36px">{c['ans']}</div></div>"""
+<svg style="position:absolute;left:190px;top:490px" width="700" height="30"><path d="M5 20 Q350 2 695 16" stroke="{line}" stroke-width="8" fill="none" stroke-linecap="round"/></svg>
+<div class=win style="position:absolute;left:70px;right:70px;top:590px;transform:rotate(-2deg)">{BARS.format('chat dengan AI')}<div style="padding:44px 40px">
+<div style="display:flex;align-items:center;gap:22px;margin-bottom:30px"><div class=ico style="width:110px;height:110px;font-size:60px;background:#FFE7DC">{c['ico']}</div><b style="font-size:50px;line-height:1.15;font-family:'Inter Display';font-weight:900;letter-spacing:-.02em">{c['t']}</b></div>
+<div class=me style="font-size:44px;margin-left:100px;padding:26px 30px">{c['q']}</div>
+<div class=ai style="font-size:46px;margin-right:0;margin-top:28px;padding:26px 30px"><div class=who>✳ AI</div>{c['ans']}</div></div></div>"""
 
 def bukti(p,n,N):
     b=p['bukti']
@@ -113,7 +124,8 @@ async def render(slugs):
         for slug in slugs:
             p=data[slug]; os.makedirs(f'{HERE}/out/{slug}',exist_ok=True)
             for i,h in enumerate(pages(p),1):
-                await pg.set_content(f'<html><head><meta charset=utf-8><style>{CSS}</style></head><body>{h}</body></html>')
+                cls='or' if (i==5 or (i==1 and p.get('orange'))) else ''
+                await pg.set_content(f'<html><head><meta charset=utf-8><style>{CSS}</style></head><body class="{cls}">{h}</body></html>')
                 await pg.evaluate(FIT); await pg.wait_for_timeout(250)
                 # overflow check: anything below 1440?
                 over=await pg.evaluate("Math.max(...[...document.querySelectorAll('.card,.win,.note')].map(e=>e.getBoundingClientRect().bottom))")

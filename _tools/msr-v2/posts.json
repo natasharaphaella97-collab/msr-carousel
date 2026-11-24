@@ -1,55 +1,432 @@
 {
-"m15-budget": {"photo":"pal",
- "cover":{"a":"Gajian,","b":"langsung bagi gini.","ico":"💸","t":"Gaji Rp6 juta","q":"Bagi budget-ku dong.","ans":"Nabung <b>Rp1,2 jt</b> duluan, pas gajian ✓"},
- "bukti":{"me":"Gajiku Rp6 juta. Kos Rp1,5 jt, transport Rp600rb, makan Rp900rb. Bagi budgetnya.","ai":"<b>Kebutuhan 50%:</b> Rp3 jt (kos, transport, makan)<br><b>Keinginan 30%:</b> Rp1,8 jt<br><b>Tabungan 20%:</b> Rp1,2 jt, transfer pas gajian<br><b>Tips:</b> jajan pakai e-wallet terpisah biar kelihatan sisanya."},
- "masalah":{"a":"Nabung dari sisa,","b":"nggak pernah sisa.","items":[["🛍️","Belanja dulu, nabung belakangan"],["🍜","Nggak tahu batas aman jajan"],["📉","Akhir bulan selalu minus"]]},
- "trik":{"a":"Bagi di awal,","b":"bukan di akhir.","body":"Kasih AI penghasilan dan pengeluaran wajibmu. Minta dibagi jadi <b style='color:#E63B2E'>kebutuhan, keinginan, tabungan</b>, lengkap sama angka rupiahnya.","note":"Patokan umum 50/30/20, sesuaikan kondisimu."},
- "cek":["Nabung langsung pas gajian?","Tahu batas jajan bulan ini?"],
- "hasil":{"a":"Penghasilan","b":"Rp6 juta.","rows":[["Kebutuhan (50%)","Rp3 jt"],["Keinginan (30%)","Rp1,8 jt"],["Tabungan (20%)","Rp1,2 jt"],["Total","Rp6 jt"]],"note":"Tabungan langsung transfer pas gajian."},
- "prompt":{"text":"Penghasilanku [Rp]/bulan. Pengeluaran wajib: [kos, cicilan, transport, makan]. Bikin pembagian budget bulanan pakai patokan 50/30/20, sesuaikan kalau kebutuhanku lebih dari 50%. Kasih angka rupiah per pos dan 3 tips biar aku nggak kebablasan.","share":"Kirim ke temen yang baru gajian 💰"}},
-
-"m16-jualbekas": {"photo":"eif",
- "cover":{"a":"Barang nganggur","b":"jadi uang.","ico":"📦","t":"Blender bekas","q":"Pasang harga berapa ya?","ans":"<b>Rp399rb</b>, tengah-tengah listing serupa ✓"},
- "bukti":{"me":"Blender 2L, dipakai 6 bulan, mulus, ada dus. Listing serupa Rp350rb, Rp400rb, Rp450rb.","ai":"<b>Judul:</b> Blender 2L Bekas Mulus, Lengkap Dus &amp; Nota<br><b>Deskripsi:</b> dipakai 6 bulan, normal semua fungsi, ada baret halus di tutup<br><b>Harga:</b> Rp399rb (di tengah listing serupa), bisa nego tipis."},
- "masalah":{"a":"Udah dipasang,","b":"nggak ada yang beli.","items":[["✏️","Judul asal-asalan"],["📷","Foto gelap, deskripsi 1 kalimat"],["🏷️","Harga kemahalan atau kemurahan"]]},
- "trik":{"a":"Foto barangnya,","b":"AI yang tulis.","body":"<b>1.</b> Foto barang dari 3 sisi<br><b>2.</b> Upload ke AI + kondisi &amp; umur pemakaian<br><b>3.</b> Kasih 5 harga listing serupa buat patokan","note":"Jujur soal minus = lebih cepat laku."},
- "cek":["Ada barang nganggur 6 bulan+?","Pernah cek harga barang serupa?"],
- "hasil":{"a":"Listing yang","b":"dilirik.","rows":[["Judul","jelas + kata kunci"],["Deskripsi","5 poin, minus ditulis"],["Foto","3 sisi, terang"],["Harga","Rp399rb"]],"note":"Harga di tengah listing serupa, masih bisa nego tipis."},
- "prompt":{"text":"Ini foto [barang]. Kondisi: [mulus / ada lecet], dipakai [X bulan], kelengkapan: [dus, nota]. Bikin judul jualan yang gampang dicari, deskripsi 5 poin yang jujur (termasuk minusnya), dan saran harga berdasarkan listing serupa yang aku kasih: [harga-harga].","share":"Kirim ke temen yang lemarinya penuh barang nganggur 📦"}},
-
-"m17-bep": {"photo":"stu",
- "cover":{"a":"Mau buka usaha?","b":"Hitung dulu.","ico":"🏪","t":"Modal Rp30 juta","q":"Kapan balik modal?","ans":"Jual 1.000 cup/bulan → <b>15 bulan</b> ✓"},
- "bukti":{"me":"Modal Rp30 juta, biaya tetap Rp6 juta/bulan, untung per cup Rp8.000. Kapan balik modal?","ai":"<b>Titik impas:</b> 750 cup/bulan (±25/hari)<br><b>Jual 1.000/bulan:</b> untung Rp2 jt → balik modal 15 bulan<br><b>Jual 1.500/bulan:</b> untung Rp6 jt → 5 bulan<br><b>Jual 600/bulan:</b> rugi Rp1,2 jt/bulan"},
- "masalah":{"a":"Semangat buka,","b":"lupa hitung modal.","items":[["🔨","Modal habis di renovasi"],["🧾","Biaya bulanan lebih besar dari perkiraan"],["❓","Nggak tahu harus jual berapa per hari"]]},
- "trik":{"a":"Minta AI hitung","b":"titik impas.","body":"Kasih modal awal, biaya tetap per bulan, dan untung per produk. AI hitung <b style='color:#E63B2E'>harus jual berapa</b> biar nggak rugi, dan berapa lama balik modal.","note":"Ini disebut BEP (break even point)."},
- "cek":["Tahu biaya tetap per bulan?","Tahu harus jual berapa per hari?"],
- "hasil":{"a":"Angka yang","b":"bikin realistis.","rows":[["Modal awal","Rp30 jt"],["Biaya tetap","Rp6 jt/bulan"],["Untung per cup","Rp8rb"],["Harus jual","750 cup/bulan"],["Jual 1.000 cup/bulan","balik modal 15 bulan"]],"note":"Di bawah 750 cup = rugi tiap bulan.","nt":1130},
- "prompt":{"text":"Aku mau buka usaha [jenis]. Modal awal [Rp], biaya tetap per bulan [sewa, gaji, listrik], untung per produk [Rp]. Hitung: berapa produk harus terjual per bulan biar nggak rugi, dan berapa bulan balik modal kalau aku jual [X]/bulan. Kasih juga skenario kalau penjualan 30% lebih rendah.","share":"Kirim ke temen yang lagi pengen buka usaha 🏪"}},
-
-"m18-bundling": {"photo":"pal",
- "cover":{"a":"Diskon 30%","b":"bikin rugi?","ico":"🍨","t":"Gelato Rp25.000","q":"Diskon 30% aman nggak?","ans":"Margin jatuh ke <b style='color:#E63B2E'>20%</b>. Pilih promo lain ✓"},
- "bukti":{"me":"Gelato Rp25.000, HPP Rp14.000. Bandingin margin diskon 30%, bundling, gratis ongkir.","ai":"<b>Normal:</b> margin 44%<br><b>Diskon 30%:</b> jual Rp17.500 → margin 20% ✗<br><b>Beli 2 + topping gratis</b> (topping Rp2.000): margin 40% ✓<br><b>Gratis ongkir min. Rp100rb</b> (ongkir ±Rp10rb): margin 34% ✓"},
- "masalah":{"a":"Ramai pembeli,","b":"untungnya hilang.","items":[["👯","Diskon ikut-ikutan kompetitor"],["🧮","Nggak hitung margin setelah diskon"],["⏳","Pembeli cuma datang pas promo"]]},
- "trik":{"a":"Suruh AI","b":"bandingin promonya.","body":"Kasih harga jual dan HPP-mu. Minta AI hitung <b style='color:#E63B2E'>margin tiap bentuk promo</b> sebelum kamu pilih.","note":"Hitung dulu, baru umumkan."},
- "cek":["Tahu margin setelah diskon?","Promo terakhir untung, bukan cuma rame?"],
- "hasil":{"a":"Mana yang","b":"masih aman.","pre":"<div style='font-size:32px;color:#777;margin-bottom:6px'>Harga Rp25.000, modal Rp14.000</div>","rows":[["Normal","margin 44%"],["Diskon 30%","20% ✗"],["Beli 2 + topping gratis","40% ✓"],["Gratis ongkir min. 100rb","34% ✓"]],"note":"Bundling lebih aman daripada potong harga.","nt":1110},
- "prompt":{"text":"Produkku [nama], harga jual [Rp], HPP [Rp]. Hitung margin untuk 5 bentuk promo: diskon %, bundling, bonus produk kecil, gratis ongkir minimum belanja, dan beli X gratis Y. Urutkan dari margin paling aman, dan tandai yang bikin rugi.","share":"Kirim ke temen yang mau bikin promo akhir tahun 🎯"}},
-
-"m19-danadarurat": {"photo":"eif",
- "cover":{"a":"Dana darurat","b":"butuh berapa?","ico":"🛟","t":"Pengeluaran Rp4 jt","q":"Dana darurat-ku berapa?","ans":"Target <b>Rp24 jt</b>, kekumpul 16 bulan ✓"},
- "bukti":{"me":"Pengeluaranku Rp4 juta/bulan, kerja sendiri. Dana darurat butuh berapa?","ai":"<b>Target:</b> 6× pengeluaran = Rp24 jt (usaha sendiri lebih aman 6×)<br><b>Nabung Rp1 jt/bulan:</b> 24 bulan<br><b>Nabung Rp1,5 jt/bulan:</b> 16 bulan<br><b>Simpan</b> di rekening terpisah yang gampang dicairkan."},
- "masalah":{"a":"Nabung tanpa","b":"target jelas.","items":[["🤷","Nggak tahu cukupnya berapa"],["🧋","Kepakai buat jajan"],["🚨","Pas butuh mendadak, nggak ada"]]},
- "trik":{"a":"Hitung dari","b":"pengeluaranmu.","body":"Patokan umum: <b style='color:#E63B2E'>3–6 kali pengeluaran bulanan</b>. AI hitung targetnya dan berapa lama terkumpul dari tabunganmu sekarang.","note":"Simpan terpisah dari rekening harian."},
- "cek":["Punya dana darurat 3× pengeluaran?","Rekeningnya udah dipisah?"],
- "hasil":{"a":"Target jelas,","b":"waktunya jelas.","rows":[["Pengeluaran","Rp4 jt/bulan"],["Target (6×)","Rp24 jt"],["Nabung Rp1 jt/bulan","24 bulan"],["Nabung Rp1,5 jt/bulan","16 bulan"]],"note":"Mulai kecil tetap lebih baik dari nunggu."},
- "prompt":{"text":"Pengeluaran bulananku [Rp], tanggunganku [sendiri / keluarga], kerja [karyawan / usaha sendiri]. Hitung target dana darurat yang cocok buat aku, berapa lama terkumpul kalau aku nabung [Rp]/bulan, dan 3 cara mempercepatnya tanpa ngorbanin kebutuhan pokok.","share":"Kirim ke temen yang belum punya dana darurat 🛟"}},
-
-"m20-cicilan": {"photo":"stu",
- "cover":{"a":"Cicilan kecil,","b":"totalnya besar.","ico":"📱","t":"HP Rp3 juta","q":"Cicil 12× Rp300rb, oke?","ans":"Total <b>Rp3,6 jt</b>. Lebih mahal <b style='color:#E63B2E'>20%</b> ✗"},
- "bukti":{"me":"HP harga tunai Rp3 juta. Cicilan 12× Rp300rb. Hitung total.","ai":"<b>Total dibayar:</b> 12 × Rp300rb = Rp3,6 jt<br><b>Lebih mahal:</b> Rp600rb (20%)<br><b>Belum termasuk</b> biaya admin &amp; denda telat<br><b>Alternatif:</b> nabung Rp300rb/bulan, 10 bulan bisa beli tunai."},
- "masalah":{"a":"Lihatnya cuma","b":"per bulan.","items":[["👀","Cuma lihat angka per bulan"],["🫥","Biaya admin nggak kelihatan"],["⏰","Denda telat bayar lumayan"]]},
- "trik":{"a":"Paste skemanya,","b":"suruh AI hitung.","body":"Harga tunai, cicilan per bulan, tenor, biaya admin. AI hitung <b style='color:#E63B2E'>total yang kamu bayar</b> dan berapa persen lebih mahal.","note":"Baca juga syarat denda &amp; biaya lain."},
- "cek":["Tahu total yang kamu bayar?","Udah cek biaya admin &amp; denda?"],
- "hasil":{"a":"HP Rp3 juta,","b":"jadi segini.","rows":[["Harga tunai","Rp3 jt"],["Cicilan 12×","Rp300rb"],["Total dibayar","Rp3,6 jt"],["Lebih mahal","Rp600rb (20%)"]],"note":"Kalau bisa nabung 10 bulan, beli tunai."},
- "prompt":{"text":"Aku mau beli [barang] harga tunai [Rp]. Pilihan cicilan: [tenor, cicilan per bulan, biaya admin]. Hitung total yang aku bayar, selisihnya dari harga tunai dalam rupiah dan persen. Bandingkan dengan kalau aku nabung dulu [Rp]/bulan.","share":"Kirim ke temen yang hobi checkout pakai cicilan 🛒"}}
+ "m15-budget": {
+  "photo": "pal",
+  "cover": {
+   "a": "Gajian,",
+   "b": "langsung bagi gini.",
+   "ico": "💸",
+   "t": "Gaji Rp6 juta",
+   "q": "Bagi budget-ku dong.",
+   "ans": "Nabung <b>Rp1,2 jt</b> duluan, pas gajian ✓"
+  },
+  "bukti": {
+   "me": "Gajiku Rp6 juta. Kos Rp1,5 jt, transport Rp600rb, makan Rp900rb. Bagi budgetnya.",
+   "ai": "<b>Kebutuhan 50%:</b> Rp3 jt (kos, transport, makan)<br><b>Keinginan 30%:</b> Rp1,8 jt<br><b>Tabungan 20%:</b> Rp1,2 jt, transfer pas gajian<br><b>Tips:</b> jajan pakai e-wallet terpisah biar kelihatan sisanya."
+  },
+  "masalah": {
+   "a": "Nabung dari sisa,",
+   "b": "nggak pernah sisa.",
+   "items": [
+    [
+     "🛍️",
+     "Belanja dulu, nabung belakangan"
+    ],
+    [
+     "🍜",
+     "Nggak tahu batas aman jajan"
+    ],
+    [
+     "📉",
+     "Akhir bulan selalu minus"
+    ]
+   ]
+  },
+  "trik": {
+   "a": "Bagi di awal,",
+   "b": "bukan di akhir.",
+   "body": "Kasih AI penghasilan dan pengeluaran wajibmu. Minta dibagi jadi <b style='color:#E63B2E'>kebutuhan, keinginan, tabungan</b>, lengkap sama angka rupiahnya.",
+   "note": "Patokan umum 50/30/20, sesuaikan kondisimu."
+  },
+  "cek": [
+   "Nabung langsung pas gajian?",
+   "Tahu batas jajan bulan ini?"
+  ],
+  "hasil": {
+   "a": "Penghasilan",
+   "b": "Rp6 juta.",
+   "rows": [
+    [
+     "Kebutuhan (50%)",
+     "Rp3 jt"
+    ],
+    [
+     "Keinginan (30%)",
+     "Rp1,8 jt"
+    ],
+    [
+     "Tabungan (20%)",
+     "Rp1,2 jt"
+    ],
+    [
+     "Total",
+     "Rp6 jt"
+    ]
+   ],
+   "note": "Tabungan langsung transfer pas gajian."
+  },
+  "prompt": {
+   "text": "Penghasilanku [Rp]/bulan. Pengeluaran wajib: [kos, cicilan, transport, makan]. Bikin pembagian budget bulanan pakai patokan 50/30/20, sesuaikan kalau kebutuhanku lebih dari 50%. Kasih angka rupiah per pos dan 3 tips biar aku nggak kebablasan.",
+   "share": "Kirim ke temen yang baru gajian 💰"
+  }
+ },
+ "m16-jualbekas": {
+  "photo": "eif",
+  "cover": {
+   "a": "Barang nganggur",
+   "b": "jadi uang.",
+   "ico": "📦",
+   "t": "Blender bekas",
+   "q": "Pasang harga berapa ya?",
+   "ans": "<b>Rp399rb</b>, tengah-tengah listing serupa ✓"
+  },
+  "bukti": {
+   "me": "Blender 2L, dipakai 6 bulan, mulus, ada dus. Listing serupa Rp350rb, Rp400rb, Rp450rb.",
+   "ai": "<b>Judul:</b> Blender 2L Bekas Mulus, Lengkap Dus &amp; Nota<br><b>Deskripsi:</b> dipakai 6 bulan, normal semua fungsi, ada baret halus di tutup<br><b>Harga:</b> Rp399rb (di tengah listing serupa), bisa nego tipis."
+  },
+  "masalah": {
+   "a": "Udah dipasang,",
+   "b": "nggak ada yang beli.",
+   "items": [
+    [
+     "✏️",
+     "Judul asal-asalan"
+    ],
+    [
+     "📷",
+     "Foto gelap, deskripsi 1 kalimat"
+    ],
+    [
+     "🏷️",
+     "Harga kemahalan atau kemurahan"
+    ]
+   ]
+  },
+  "trik": {
+   "a": "Foto barangnya,",
+   "b": "AI yang tulis.",
+   "body": "<b>1.</b> Foto barang dari 3 sisi<br><b>2.</b> Upload ke AI + kondisi &amp; umur pemakaian<br><b>3.</b> Kasih 5 harga listing serupa buat patokan",
+   "note": "Jujur soal minus = lebih cepat laku."
+  },
+  "cek": [
+   "Ada barang nganggur 6 bulan+?",
+   "Pernah cek harga barang serupa?"
+  ],
+  "hasil": {
+   "a": "Listing yang",
+   "b": "dilirik.",
+   "rows": [
+    [
+     "Judul",
+     "jelas + kata kunci"
+    ],
+    [
+     "Deskripsi",
+     "5 poin, minus ditulis"
+    ],
+    [
+     "Foto",
+     "3 sisi, terang"
+    ],
+    [
+     "Harga",
+     "Rp399rb"
+    ]
+   ],
+   "note": "Harga di tengah listing serupa, masih bisa nego tipis."
+  },
+  "prompt": {
+   "text": "Ini foto [barang]. Kondisi: [mulus / ada lecet], dipakai [X bulan], kelengkapan: [dus, nota]. Bikin judul jualan yang gampang dicari, deskripsi 5 poin yang jujur (termasuk minusnya), dan saran harga berdasarkan listing serupa yang aku kasih: [harga-harga].",
+   "share": "Kirim ke temen yang lemarinya penuh barang nganggur 📦"
+  },
+  "orange": true
+ },
+ "m17-bep": {
+  "photo": "stu",
+  "cover": {
+   "a": "Mau buka usaha?",
+   "b": "Hitung dulu.",
+   "ico": "🏪",
+   "t": "Modal Rp30 juta",
+   "q": "Kapan balik modal?",
+   "ans": "Jual 1.000 cup/bulan → <b>15 bulan</b> ✓"
+  },
+  "bukti": {
+   "me": "Modal Rp30 juta, biaya tetap Rp6 juta/bulan, untung per cup Rp8.000. Kapan balik modal?",
+   "ai": "<b>Titik impas:</b> 750 cup/bulan (±25/hari)<br><b>Jual 1.000/bulan:</b> untung Rp2 jt → balik modal 15 bulan<br><b>Jual 1.500/bulan:</b> untung Rp6 jt → 5 bulan<br><b>Jual 600/bulan:</b> rugi Rp1,2 jt/bulan"
+  },
+  "masalah": {
+   "a": "Semangat buka,",
+   "b": "lupa hitung modal.",
+   "items": [
+    [
+     "🔨",
+     "Modal habis di renovasi"
+    ],
+    [
+     "🧾",
+     "Biaya bulanan lebih besar dari perkiraan"
+    ],
+    [
+     "❓",
+     "Nggak tahu harus jual berapa per hari"
+    ]
+   ]
+  },
+  "trik": {
+   "a": "Minta AI hitung",
+   "b": "titik impas.",
+   "body": "Kasih modal awal, biaya tetap per bulan, dan untung per produk. AI hitung <b style='color:#E63B2E'>harus jual berapa</b> biar nggak rugi, dan berapa lama balik modal.",
+   "note": "Ini disebut BEP (break even point)."
+  },
+  "cek": [
+   "Tahu biaya tetap per bulan?",
+   "Tahu harus jual berapa per hari?"
+  ],
+  "hasil": {
+   "a": "Angka yang",
+   "b": "bikin realistis.",
+   "rows": [
+    [
+     "Modal awal",
+     "Rp30 jt"
+    ],
+    [
+     "Biaya tetap",
+     "Rp6 jt/bulan"
+    ],
+    [
+     "Untung per cup",
+     "Rp8rb"
+    ],
+    [
+     "Harus jual",
+     "750 cup/bulan"
+    ],
+    [
+     "Jual 1.000 cup/bulan",
+     "balik modal 15 bulan"
+    ]
+   ],
+   "note": "Di bawah 750 cup = rugi tiap bulan.",
+   "nt": 1130
+  },
+  "prompt": {
+   "text": "Aku mau buka usaha [jenis]. Modal awal [Rp], biaya tetap per bulan [sewa, gaji, listrik], untung per produk [Rp]. Hitung: berapa produk harus terjual per bulan biar nggak rugi, dan berapa bulan balik modal kalau aku jual [X]/bulan. Kasih juga skenario kalau penjualan 30% lebih rendah.",
+   "share": "Kirim ke temen yang lagi pengen buka usaha 🏪"
+  }
+ },
+ "m18-bundling": {
+  "photo": "pal",
+  "cover": {
+   "a": "Diskon 30%",
+   "b": "bikin rugi?",
+   "ico": "🍨",
+   "t": "Gelato Rp25.000",
+   "q": "Diskon 30% aman nggak?",
+   "ans": "Margin jatuh ke <b style='color:#E63B2E'>20%</b>. Pilih promo lain ✓"
+  },
+  "bukti": {
+   "me": "Gelato Rp25.000, HPP Rp14.000. Bandingin margin diskon 30%, bundling, gratis ongkir.",
+   "ai": "<b>Normal:</b> margin 44%<br><b>Diskon 30%:</b> jual Rp17.500 → margin 20% ✗<br><b>Beli 2 + topping gratis</b> (topping Rp2.000): margin 40% ✓<br><b>Gratis ongkir min. Rp100rb</b> (ongkir ±Rp10rb): margin 34% ✓"
+  },
+  "masalah": {
+   "a": "Ramai pembeli,",
+   "b": "untungnya hilang.",
+   "items": [
+    [
+     "👯",
+     "Diskon ikut-ikutan kompetitor"
+    ],
+    [
+     "🧮",
+     "Nggak hitung margin setelah diskon"
+    ],
+    [
+     "⏳",
+     "Pembeli cuma datang pas promo"
+    ]
+   ]
+  },
+  "trik": {
+   "a": "Suruh AI",
+   "b": "bandingin promonya.",
+   "body": "Kasih harga jual dan HPP-mu. Minta AI hitung <b style='color:#E63B2E'>margin tiap bentuk promo</b> sebelum kamu pilih.",
+   "note": "Hitung dulu, baru umumkan."
+  },
+  "cek": [
+   "Tahu margin setelah diskon?",
+   "Promo terakhir untung, bukan cuma rame?"
+  ],
+  "hasil": {
+   "a": "Mana yang",
+   "b": "masih aman.",
+   "pre": "<div style='font-size:32px;color:#777;margin-bottom:6px'>Harga Rp25.000, modal Rp14.000</div>",
+   "rows": [
+    [
+     "Normal",
+     "margin 44%"
+    ],
+    [
+     "Diskon 30%",
+     "20% ✗"
+    ],
+    [
+     "Beli 2 + topping gratis",
+     "40% ✓"
+    ],
+    [
+     "Gratis ongkir min. 100rb",
+     "34% ✓"
+    ]
+   ],
+   "note": "Bundling lebih aman daripada potong harga.",
+   "nt": 1110
+  },
+  "prompt": {
+   "text": "Produkku [nama], harga jual [Rp], HPP [Rp]. Hitung margin untuk 5 bentuk promo: diskon %, bundling, bonus produk kecil, gratis ongkir minimum belanja, dan beli X gratis Y. Urutkan dari margin paling aman, dan tandai yang bikin rugi.",
+   "share": "Kirim ke temen yang mau bikin promo akhir tahun 🎯"
+  },
+  "orange": true
+ },
+ "m19-danadarurat": {
+  "photo": "eif",
+  "cover": {
+   "a": "Dana darurat",
+   "b": "butuh berapa?",
+   "ico": "🛟",
+   "t": "Pengeluaran Rp4 jt",
+   "q": "Dana darurat-ku berapa?",
+   "ans": "Target <b>Rp24 jt</b>, kekumpul 16 bulan ✓"
+  },
+  "bukti": {
+   "me": "Pengeluaranku Rp4 juta/bulan, kerja sendiri. Dana darurat butuh berapa?",
+   "ai": "<b>Target:</b> 6× pengeluaran = Rp24 jt (usaha sendiri lebih aman 6×)<br><b>Nabung Rp1 jt/bulan:</b> 24 bulan<br><b>Nabung Rp1,5 jt/bulan:</b> 16 bulan<br><b>Simpan</b> di rekening terpisah yang gampang dicairkan."
+  },
+  "masalah": {
+   "a": "Nabung tanpa",
+   "b": "target jelas.",
+   "items": [
+    [
+     "🤷",
+     "Nggak tahu cukupnya berapa"
+    ],
+    [
+     "🧋",
+     "Kepakai buat jajan"
+    ],
+    [
+     "🚨",
+     "Pas butuh mendadak, nggak ada"
+    ]
+   ]
+  },
+  "trik": {
+   "a": "Hitung dari",
+   "b": "pengeluaranmu.",
+   "body": "Patokan umum: <b style='color:#E63B2E'>3–6 kali pengeluaran bulanan</b>. AI hitung targetnya dan berapa lama terkumpul dari tabunganmu sekarang.",
+   "note": "Simpan terpisah dari rekening harian."
+  },
+  "cek": [
+   "Punya dana darurat 3× pengeluaran?",
+   "Rekeningnya udah dipisah?"
+  ],
+  "hasil": {
+   "a": "Target jelas,",
+   "b": "waktunya jelas.",
+   "rows": [
+    [
+     "Pengeluaran",
+     "Rp4 jt/bulan"
+    ],
+    [
+     "Target (6×)",
+     "Rp24 jt"
+    ],
+    [
+     "Nabung Rp1 jt/bulan",
+     "24 bulan"
+    ],
+    [
+     "Nabung Rp1,5 jt/bulan",
+     "16 bulan"
+    ]
+   ],
+   "note": "Mulai kecil tetap lebih baik dari nunggu."
+  },
+  "prompt": {
+   "text": "Pengeluaran bulananku [Rp], tanggunganku [sendiri / keluarga], kerja [karyawan / usaha sendiri]. Hitung target dana darurat yang cocok buat aku, berapa lama terkumpul kalau aku nabung [Rp]/bulan, dan 3 cara mempercepatnya tanpa ngorbanin kebutuhan pokok.",
+   "share": "Kirim ke temen yang belum punya dana darurat 🛟"
+  }
+ },
+ "m20-cicilan": {
+  "photo": "stu",
+  "cover": {
+   "a": "Cicilan kecil,",
+   "b": "totalnya besar.",
+   "ico": "📱",
+   "t": "HP Rp3 juta",
+   "q": "Cicil 12× Rp300rb, oke?",
+   "ans": "Total <b>Rp3,6 jt</b>. Lebih mahal <b style='color:#E63B2E'>20%</b> ✗"
+  },
+  "bukti": {
+   "me": "HP harga tunai Rp3 juta. Cicilan 12× Rp300rb. Hitung total.",
+   "ai": "<b>Total dibayar:</b> 12 × Rp300rb = Rp3,6 jt<br><b>Lebih mahal:</b> Rp600rb (20%)<br><b>Belum termasuk</b> biaya admin &amp; denda telat<br><b>Alternatif:</b> nabung Rp300rb/bulan, 10 bulan bisa beli tunai."
+  },
+  "masalah": {
+   "a": "Lihatnya cuma",
+   "b": "per bulan.",
+   "items": [
+    [
+     "👀",
+     "Cuma lihat angka per bulan"
+    ],
+    [
+     "🫥",
+     "Biaya admin nggak kelihatan"
+    ],
+    [
+     "⏰",
+     "Denda telat bayar lumayan"
+    ]
+   ]
+  },
+  "trik": {
+   "a": "Paste skemanya,",
+   "b": "suruh AI hitung.",
+   "body": "Harga tunai, cicilan per bulan, tenor, biaya admin. AI hitung <b style='color:#E63B2E'>total yang kamu bayar</b> dan berapa persen lebih mahal.",
+   "note": "Baca juga syarat denda &amp; biaya lain."
+  },
+  "cek": [
+   "Tahu total yang kamu bayar?",
+   "Udah cek biaya admin &amp; denda?"
+  ],
+  "hasil": {
+   "a": "HP Rp3 juta,",
+   "b": "jadi segini.",
+   "rows": [
+    [
+     "Harga tunai",
+     "Rp3 jt"
+    ],
+    [
+     "Cicilan 12×",
+     "Rp300rb"
+    ],
+    [
+     "Total dibayar",
+     "Rp3,6 jt"
+    ],
+    [
+     "Lebih mahal",
+     "Rp600rb (20%)"
+    ]
+   ],
+   "note": "Kalau bisa nabung 10 bulan, beli tunai."
+  },
+  "prompt": {
+   "text": "Aku mau beli [barang] harga tunai [Rp]. Pilihan cicilan: [tenor, cicilan per bulan, biaya admin]. Hitung total yang aku bayar, selisihnya dari harga tunai dalam rupiah dan persen. Bandingkan dengan kalau aku nabung dulu [Rp]/bulan.",
+   "share": "Kirim ke temen yang hobi checkout pakai cicilan 🛒"
+  },
+  "orange": true
+ }
 }
