@@ -9,7 +9,9 @@ F='/home/claude/work/fonts/fontsource-space-mono-5.3.0/files/space-mono-latin-70
 SM=b64(F,'font/woff2'); AV=b64(HERE+'/av.jpg','image/jpeg')
 CUTS={k:b64(f'{HERE}/cut/{k}_c.png','image/png') for k in ['pal','eif','stu']}
 RED='#E63B2E'
-CSS=f"""@font-face{{font-family:SM;src:url({SM})}}
+NR='/home/claude/work/fonts/fontsource-newsreader/files/newsreader-latin-500-'
+SERIF=f"@font-face{{font-family:IS;src:url({b64(NR+'normal.woff2','font/woff2')})}}@font-face{{font-family:IS;font-style:italic;src:url({b64(NR+'italic.woff2','font/woff2')})}}"
+CSS=SERIF+f"""@font-face{{font-family:SM;src:url({SM})}}
 *{{box-sizing:border-box;margin:0}}
 body{{width:1080px;height:1440px;overflow:hidden;position:relative;background:#fff;font-family:'Inter',sans-serif;color:#141414}}
 .rings{{position:absolute;inset:0;background:
@@ -22,11 +24,11 @@ radial-gradient(circle at 96% 62%,transparent 499px,#EEE 500px,#EEE 502px,transp
 .hd span{{font-size:30px;color:#777}}
 .cnt{{position:absolute;right:56px;top:74px;border:3px solid #DDD;border-radius:999px;padding:8px 30px;font-family:'Inter Display';font-weight:900;font-size:36px}}
 .cnt i{{font-style:normal;color:#BBB;font-weight:500}}
-.kick{{position:absolute;left:0;right:0;top:225px;display:flex;align-items:center;justify-content:center;gap:22px;font-family:SM;font-size:30px;letter-spacing:.3em;white-space:nowrap}}
+.kick{{position:absolute;left:0;right:0;top:225px;display:flex;align-items:center;justify-content:center;gap:22px;font-weight:800;font-size:30px;letter-spacing:.22em;color:#C2410C;white-space:nowrap}}
 .kick:before,.kick:after{{content:'';width:120px;height:2px;background:#CCC}}
-h1{{font-family:'Inter Display';font-weight:900;letter-spacing:-.035em;line-height:1.02;text-align:center;position:absolute;left:40px;right:40px}}
+h1{{font-family:IS;font-weight:500;letter-spacing:-.025em;line-height:1.02;text-align:center;position:absolute;left:40px;right:40px}}
 h1 .l{{display:block;white-space:nowrap}}
-.r{{background:linear-gradient(90deg,{RED},#F2793A);-webkit-background-clip:text;color:transparent;padding:0 6px 6px}}
+.r{{color:#D9481F;font-style:italic;padding:0 8px 0 0}}
 .note{{position:absolute;left:70px;right:70px;text-align:center;font-size:36px;color:#555;line-height:1.35}}
 .card{{background:#fff;border:2px solid #EAEAEA;border-radius:28px;box-shadow:0 10px 30px rgba(0,0,0,.05)}}
 .stk{{position:absolute;left:56px;right:56px;display:flex;flex-direction:column;gap:34px}}
@@ -45,8 +47,8 @@ body.or .rings{{opacity:.25;filter:invert(1)}}
 body.or .hd span{{color:rgba(255,255,255,.85)}}
 body.or .mono{{background:#fff;color:#F2552C}}
 body.or .cnt{{border-color:rgba(255,255,255,.5)}} body.or .cnt i{{color:rgba(255,255,255,.6)}}
-body.or .kick:before,body.or .kick:after{{background:rgba(255,255,255,.6)}}
-body.or h1 .r{{background:none;-webkit-background-clip:initial;color:#141414}}
+body.or .kick:before,body.or .kick:after{{background:rgba(255,255,255,.6)}} body.or .kick{{color:#fff}}
+body.or h1 .r{{color:#141414}}
 body.or .note{{color:#fff}} body.or .note b{{color:#141414!important}}
 body.or .card,body.or .win{{color:#141414;border-color:transparent;box-shadow:0 18px 40px rgba(120,30,0,.25)}}
 tr.t td{{border-top:3px dashed #DDD;padding-top:22px;color:{RED};font-weight:900}}
