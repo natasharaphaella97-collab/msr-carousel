@@ -426,5 +426,1100 @@
    "text": "Ini file pesanan tokoku bulan [bulan]. Rekap: 5 produk terlaris (jumlah & omzet), produk yang terjual kurang dari 5, serta jam & hari paling ramai. Lalu kasih saran: produk mana yang restock duluan, mana yang sebaiknya dibundling atau distop. Tampilkan dalam tabel.",
    "share": "Kirim ke temen yang jualan di marketplace 📊"
   }
+ },
+ "n01-fotokatalog": {
+  "orange": false,
+  "cover": {
+   "a": "Foto pakai HP?",
+   "b": "Jadiin katalog.",
+   "ico": "📸",
+   "t": "Foto gelato di meja",
+   "q": "Background-nya berantakan.",
+   "ans": "Ganti jadi latar polos, siap upload ✓"
+  },
+  "bukti": {
+   "me": "[upload foto produk] Ganti background jadi putih bersih, produk jangan diubah, tambah bayangan tipis.",
+   "ai": "Siap! Ini fotonya: <b>latar putih polos</b>, bayangan tipis di bawah cup, warna gelato tetap asli. Mau aku bikinin juga versi latar pastel buat feed?"
+  },
+  "masalah": {
+   "a": "Produknya bagus,",
+   "b": "fotonya bikin ragu.",
+   "items": [
+    [
+     "🧺",
+     "Background berantakan"
+    ],
+    [
+     "🌑",
+     "Cahaya gelap, warna pucat"
+    ],
+    [
+     "🖼️",
+     "Tiap foto beda gaya"
+    ]
+   ]
+  },
+  "trik": {
+   "a": "Foto dulu,",
+   "b": "AI yang rapihin.",
+   "body": "Pakai AI yang bisa edit gambar. Minta <b style=\"color:#E63B2E\">ganti background, rapihin cahaya,</b> tapi produknya jangan diubah.",
+   "note": "Bandingkan dulu sama produk asli sebelum upload."
+  },
+  "cek": [
+   "Foto produkmu latarnya seragam?",
+   "Warna di foto sama kayak aslinya?"
+  ],
+  "hasil": {
+   "a": "Satu foto HP,",
+   "b": "jadi 3 versi.",
+   "rows": [
+    [
+     "Marketplace",
+     "latar putih"
+    ],
+    [
+     "Feed IG",
+     "latar pastel"
+    ],
+    [
+     "Promo",
+     "latar + teks harga"
+    ],
+    [
+     "Biaya studio",
+     "Rp0"
+    ]
+   ],
+   "note": "Tetap foto di tempat terang biar hasilnya tajam."
+  },
+  "prompt": {
+   "text": "Ini foto produkku [nama produk]. Ganti background jadi [putih polos / pastel], rapikan cahaya, tambahkan bayangan tipis. Jangan ubah bentuk, warna, dan tulisan di produk. Ukuran 1:1 untuk marketplace.",
+   "share": "Kirim ke temen yang foto produknya masih pakai HP 📸"
+  },
+  "cap": "Nggak perlu studio buat foto katalog. Foto pakai HP, minta AI ganti background-nya. Prompt-nya di slide terakhir.\n#fotoproduk #jualanonline #tipsai #promptai #umkm",
+  "title": "Foto HP jadi foto katalog",
+  "when": "2026-11-26T10:00:00"
+ },
+ "n02-caption7hari": {
+  "orange": true,
+  "cover": {
+   "a": "Caption seminggu",
+   "b": "beres 5 menit.",
+   "ico": "✍️",
+   "t": "Toko nail art online",
+   "q": "Bikinin caption 7 hari.",
+   "ans": "7 caption + jam posting, siap pakai ✓"
+  },
+  "bukti": {
+   "me": "Tokoku jual gel polish & nail art. Bikin 7 caption IG buat seminggu, santai, ada ajakan beli.",
+   "ai": "<b>Senin:</b> \"Kuku polos? 5 menit jadi cantik 💅\"<br><b>Selasa:</b> tutorial 3 langkah french tip<br><b>Rabu:</b> warna terlaris bulan ini<br><b>Kamis:</b> testimoni pelanggan<br>… sampai Minggu, lengkap jam posting."
+  },
+  "masalah": {
+   "a": "Tiap hari bingung",
+   "b": "mau nulis apa.",
+   "items": [
+    [
+     "😶",
+     "Buka HP, nggak ada ide"
+    ],
+    [
+     "🔁",
+     "Caption itu-itu aja"
+    ],
+    [
+     "⏰",
+     "Telat posting, jadi bolong"
+    ]
+   ]
+  },
+  "trik": {
+   "a": "Minta sekaligus",
+   "b": "satu minggu.",
+   "body": "Kasih AI info tokomu, produk andalan, dan gaya bahasa. Minta <b style=\"color:#E63B2E\">7 caption beda tema</b> sekaligus, lengkap jam posting.",
+   "note": "Edit sedikit biar suaranya kamu banget."
+  },
+  "cek": [
+   "Punya stok caption minggu ini?",
+   "Tiap hari temanya beda?"
+  ],
+  "hasil": {
+   "a": "Satu prompt,",
+   "b": "tujuh hari aman.",
+   "rows": [
+    [
+     "Senin",
+     "tips"
+    ],
+    [
+     "Rabu",
+     "produk laris"
+    ],
+    [
+     "Jumat",
+     "promo"
+    ],
+    [
+     "Waktu nulis",
+     "±5 menit"
+    ]
+   ],
+   "note": "Sisa waktunya buat bales chat pembeli."
+  },
+  "prompt": {
+   "text": "Aku jual [produk] untuk [target pembeli]. Gaya bahasa: [santai/formal]. Buatkan 7 caption Instagram untuk Senin–Minggu dengan tema berbeda (tips, produk, testimoni, promo, behind the scene). Tiap caption maks 3 kalimat + 1 ajakan beli + 3 hashtag. Sarankan jam posting.",
+   "share": "Kirim ke temen yang tiap hari bingung mau posting apa ✍️"
+  },
+  "cap": "Caption 1 minggu cukup 1 prompt. Tinggal edit dikit, jadwalin. Prompt-nya di slide terakhir.\n#caption #jualanonline #tipsai #promptai #sosmed",
+  "title": "Caption seminggu 5 menit",
+  "when": "2026-11-26T19:00:00"
+ },
+ "n03-reviewkompetitor": {
+  "orange": false,
+  "cover": {
+   "a": "Intip review",
+   "b": "kompetitor.",
+   "ico": "🔍",
+   "t": "Toko gelato sebelah",
+   "q": "Pembeli mereka ngeluh apa?",
+   "ans": "3 keluhan terbanyak + celahnya ✓"
+  },
+  "bukti": {
+   "me": "[paste 30 review toko kompetitor] Rangkum keluhan dan pujian paling sering. Apa yang bisa aku lakuin lebih baik?",
+   "ai": "<b>Keluhan #1:</b> gelato cepat cair saat sampai (11×)<br><b>Keluhan #2:</b> porsi kecil (7×)<br><b>Pujian:</b> rasa pistachio (9×)<br><b>Celah buatmu:</b> kemasan ice pack + tulis gramasi jelas."
+  },
+  "masalah": {
+   "a": "Mau beda,",
+   "b": "tapi nggak tahu celahnya.",
+   "items": [
+    [
+     "🤔",
+     "Nebak-nebak maunya pembeli"
+    ],
+    [
+     "📋",
+     "Review numpuk, males baca"
+    ],
+    [
+     "🎯",
+     "Promo nggak kena sasaran"
+    ]
+   ]
+  },
+  "trik": {
+   "a": "Keluhan mereka,",
+   "b": "jadi peluangmu.",
+   "body": "Copy 20–50 review kompetitor (yang publik). Minta AI <b style=\"color:#E63B2E\">kelompokkan keluhan & pujian</b>, lalu cari celah yang bisa kamu isi.",
+   "note": "Pakai buat perbaikan, bukan buat jelek-jelekin."
+  },
+  "cek": [
+   "Tahu keluhan utama pembeli di nichemu?",
+   "Produkmu udah jawab keluhan itu?"
+  ],
+  "hasil": {
+   "a": "Dari 30 review,",
+   "b": "ketemu 3 celah.",
+   "rows": [
+    [
+     "Cepat cair",
+     "pakai ice pack"
+    ],
+    [
+     "Porsi kecil",
+     "tulis gramasi"
+    ],
+    [
+     "Rasa favorit",
+     "pistachio"
+    ],
+    [
+     "Dipakai di",
+     "caption & listing"
+    ]
+   ],
+   "note": "Tulis celahnya di caption: \"nggak cair sampai rumah\"."
+  },
+  "prompt": {
+   "text": "Ini review pembeli dari toko kompetitor: [paste review]. Kelompokkan jadi keluhan dan pujian, urutkan dari yang paling sering. Lalu kasih 3 ide konkret supaya tokoku [nama/produk] bisa lebih unggul di poin itu.",
+   "share": "Kirim ke temen yang lagi cari celah jualan 🔍"
+  },
+  "cap": "Review kompetitor itu riset gratis. Kasih ke AI, ketemu celah yang bisa kamu isi. Prompt-nya di slide terakhir.\n#risetpasar #jualanonline #tipsai #promptai #umkm",
+  "title": "Intip review kompetitor pakai AI",
+  "when": "2026-11-27T19:00:00"
+ },
+ "n04-deskripsiproduk": {
+  "orange": true,
+  "cover": {
+   "a": "Deskripsi produk",
+   "b": "biar gampang dicari.",
+   "ico": "🛍️",
+   "t": "Gel polish nude",
+   "q": "Bikinin deskripsi marketplace.",
+   "ans": "Judul + 5 poin + kata kunci ✓"
+  },
+  "bukti": {
+   "me": "Gel polish warna nude, 10ml, tahan 3 minggu, perlu lampu UV/LED. Bikin judul & deskripsi Shopee.",
+   "ai": "<b>Judul:</b> Gel Polish Nude 10ml Tahan 3 Minggu UV/LED<br><b>Poin:</b> ✓ Warna nude natural ✓ 10ml ±30 pemakaian ✓ Perlu lampu UV/LED ✓ Kering 60 detik ✓ Ready kirim<br><b>Kata kunci:</b> kutek gel, gel polish nude"
+  },
+  "masalah": {
+   "a": "Produk ada,",
+   "b": "tapi nggak muncul.",
+   "items": [
+    [
+     "🔤",
+     "Judul cuma nama produk"
+    ],
+    [
+     "📄",
+     "Deskripsi 1 baris"
+    ],
+    [
+     "❓",
+     "Pembeli nanya hal yang sama"
+    ]
+   ]
+  },
+  "trik": {
+   "a": "Kasih detail,",
+   "b": "AI yang susun.",
+   "body": "Tulis fakta produkmu: ukuran, bahan, cara pakai, kelebihan. Minta AI bikin <b style=\"color:#E63B2E\">judul berkata kunci + 5 poin</b> yang langsung jawab pertanyaan pembeli.",
+   "note": "Cek lagi, semua klaim harus sesuai produk asli."
+  },
+  "cek": [
+   "Judul produkmu ada kata kuncinya?",
+   "Deskripsi jawab pertanyaan umum?"
+  ],
+  "hasil": {
+   "a": "Satu listing,",
+   "b": "lebih lengkap.",
+   "rows": [
+    [
+     "Judul",
+     "kata kunci di depan"
+    ],
+    [
+     "Poin",
+     "5 manfaat jelas"
+    ],
+    [
+     "FAQ",
+     "3 pertanyaan umum"
+    ],
+    [
+     "Chat nanya ulang",
+     "berkurang"
+    ]
+   ],
+   "note": "Pakai format yang sama buat semua produk."
+  },
+  "prompt": {
+   "text": "Produkku: [nama, ukuran, bahan, cara pakai, kelebihan]. Buatkan judul marketplace maks 100 karakter dengan kata kunci utama di depan, deskripsi 5 poin manfaat, dan 3 FAQ singkat. Jangan menambahkan klaim yang tidak ada di data ini.",
+   "share": "Kirim ke temen yang listing-nya masih sepi 🛍️"
+  },
+  "cap": "Judul & deskripsi yang jelas bikin produk lebih gampang dicari. Biar AI yang susun. Prompt-nya di slide terakhir.\n#shopee #marketplace #tipsai #promptai #jualanonline",
+  "title": "Deskripsi produk biar gampang dicari",
+  "when": "2026-11-28T10:00:00"
+ },
+ "n05-followup": {
+  "orange": false,
+  "cover": {
+   "a": "Udah nanya,",
+   "b": "nggak jadi beli?",
+   "ico": "💬",
+   "t": "Pembeli nanya harga",
+   "q": "Terus menghilang 2 hari.",
+   "ans": "Pesan follow-up sopan, nggak maksa ✓"
+  },
+  "bukti": {
+   "me": "Pembeli nanya harga gelato box 500ml 2 hari lalu, terus nggak bales. Bikin follow-up sopan, nggak maksa.",
+   "ai": "Halo kak! 😊 Kemarin sempat nanya gelato box 500ml ya. Hari ini rasa <b>pistachio & salted caramel</b> lagi ready. Kalau mau, aku bisa siapin buat diambil sore ini. Kabarin aja ya kak!"
+  },
+  "masalah": {
+   "a": "Chat masuk,",
+   "b": "tapi nggak closing.",
+   "items": [
+    [
+     "🙊",
+     "Malu nge-chat duluan"
+    ],
+    [
+     "😬",
+     "Takut dibilang maksa"
+    ],
+    [
+     "📉",
+     "Calon pembeli lupa"
+    ]
+   ]
+  },
+  "trik": {
+   "a": "Follow-up",
+   "b": "1 kali, yang sopan.",
+   "body": "Kasih AI isi chat terakhir. Minta <b style=\"color:#E63B2E\">1 pesan follow-up singkat</b> yang ngingetin, kasih info baru, dan nggak maksa.",
+   "note": "Cukup sekali. Kalau tetap diam, biarin."
+  },
+  "cek": [
+   "Pernah follow-up chat yang nggak jadi beli?",
+   "Punya template follow-up?"
+  ],
+  "hasil": {
+   "a": "Satu pesan,",
+   "b": "peluang kedua.",
+   "rows": [
+    [
+     "Kapan",
+     "1–2 hari setelah chat"
+    ],
+    [
+     "Isi",
+     "info baru / stok ready"
+    ],
+    [
+     "Nada",
+     "santai, nggak maksa"
+    ],
+    [
+     "Maksimal",
+     "1 kali"
+    ]
+   ],
+   "note": "Simpan jadi template, tinggal ganti nama produk."
+  },
+  "prompt": {
+   "text": "Ini chat terakhir dengan calon pembeli: [paste chat]. Dia belum balas [X hari]. Buatkan 1 pesan follow-up WhatsApp maks 3 kalimat: sopan, tidak memaksa, sebut produk yang dia tanya, dan kasih 1 info baru (stok/varian/promo).",
+   "share": "Kirim ke temen yang chat-nya sering di-PHP pembeli 💬"
+  },
+  "cap": "Chat masuk tapi nggak closing? Follow-up sekali, yang sopan. AI bantu tulis. Prompt-nya di slide terakhir.\n#closing #jualanonline #tipsai #promptai #olshop",
+  "title": "Follow-up pembeli yang menghilang",
+  "when": "2026-11-28T19:00:00"
+ },
+ "n06-reviewbintang1": {
+  "orange": true,
+  "cover": {
+   "a": "Dapat bintang 1?",
+   "b": "Balas yang adem.",
+   "ico": "⭐",
+   "t": "Review: \"Paket telat\"",
+   "q": "Gimana balasnya ya?",
+   "ans": "Balasan sopan + solusi, nggak defensif ✓"
+  },
+  "bukti": {
+   "me": "Review bintang 1: \"Paket telat 4 hari, gel polish-nya bocor.\" Bikin balasan publik yang sopan & ada solusi.",
+   "ai": "Halo kak, mohon maaf banget paketnya telat dan gel polish-nya bocor 🙏 Ini bukan pengalaman yang kami mau. Boleh chat kami nomor pesanannya? <b>Kami kirim ganti</b> dan mulai sekarang botol kami double-wrap."
+  },
+  "masalah": {
+   "a": "Review jelek,",
+   "b": "bikin panik.",
+   "items": [
+    [
+     "😤",
+     "Balas pakai emosi"
+    ],
+    [
+     "🙈",
+     "Didiemin aja"
+    ],
+    [
+     "👀",
+     "Calon pembeli ikut baca"
+    ]
+   ]
+  },
+  "trik": {
+   "a": "Minta maaf,",
+   "b": "kasih jalan keluar.",
+   "body": "Kasih AI isi review dan faktanya. Minta balasan yang <b style=\"color:#E63B2E\">minta maaf, nggak nyalahin, dan ada solusi</b>. Yang baca bukan cuma dia, tapi calon pembeli lain.",
+   "note": "Solusinya harus beneran kamu jalanin."
+  },
+  "cek": [
+   "Semua review jelek udah dibalas?",
+   "Balasanmu ada solusinya?"
+  ],
+  "hasil": {
+   "a": "Satu balasan,",
+   "b": "dibaca banyak orang.",
+   "rows": [
+    [
+     "Pembuka",
+     "minta maaf"
+    ],
+    [
+     "Isi",
+     "akui masalahnya"
+    ],
+    [
+     "Solusi",
+     "ganti / refund"
+    ],
+    [
+     "Penutup",
+     "perbaikan ke depan"
+    ]
+   ],
+   "note": "Calon pembeli lihat cara kamu nanggepin."
+  },
+  "prompt": {
+   "text": "Ini review bintang 1 di tokoku: [paste review]. Faktanya: [apa yang terjadi]. Buatkan balasan publik maks 4 kalimat: minta maaf tulus, tidak menyalahkan pembeli atau kurir, tawarkan solusi [ganti/refund], dan sebut 1 perbaikan yang kami lakukan.",
+   "share": "Kirim ke temen yang lagi pusing dapat review jelek ⭐"
+  },
+  "cap": "Review bintang 1 jangan dibalas pakai emosi. Calon pembeli ikut baca. Prompt-nya di slide terakhir.\n#reviewpelanggan #olshop #tipsai #promptai #jualanonline",
+  "title": "Balas review bintang 1",
+  "when": "2026-11-29T19:00:00"
+ },
+ "n07-scriptvideo": {
+  "orange": false,
+  "cover": {
+   "a": "Video jualan",
+   "b": "30 detik.",
+   "ico": "🎬",
+   "t": "Gelato rasa baru",
+   "q": "Bikin script video pendek.",
+   "ans": "Hook + 3 scene + ajakan beli ✓"
+  },
+  "bukti": {
+   "me": "Gelato rasa baru: salted caramel. Bikin script video TikTok 30 detik, tanpa muka, pakai teks di layar.",
+   "ai": "<b>0–3 dtk:</b> sendok nyendok pelan, teks \"Ini bukan gelato biasa\"<br><b>3–15 dtk:</b> close-up karamel meleleh<br><b>15–25 dtk:</b> 3 alasan coba<br><b>25–30 dtk:</b> \"Ready hari ini, cuma 30 cup\""
+  },
+  "masalah": {
+   "a": "Mau bikin video,",
+   "b": "bingung mulai dari mana.",
+   "items": [
+    [
+     "🎥",
+     "Rekam lama, hasil membosankan"
+    ],
+    [
+     "🗣️",
+     "Nggak pede ngomong di kamera"
+    ],
+    [
+     "⏭️",
+     "Ditonton 2 detik, di-skip"
+    ]
+   ]
+  },
+  "trik": {
+   "a": "Minta script",
+   "b": "per detik.",
+   "body": "Kasih AI produk & targetmu. Minta <b style=\"color:#E63B2E\">script 30 detik per scene</b>: hook 3 detik pertama, gambar apa yang direkam, dan teks di layar.",
+   "note": "Rekam sesuai urutan, edit jadi cepat."
+  },
+  "cek": [
+   "3 detik pertama videomu udah bikin penasaran?",
+   "Ada teks di layar?"
+  ],
+  "hasil": {
+   "a": "Satu script,",
+   "b": "rekam 10 menit.",
+   "rows": [
+    [
+     "Hook",
+     "0–3 detik"
+    ],
+    [
+     "Isi",
+     "3 scene pendek"
+    ],
+    [
+     "Penutup",
+     "ajakan beli"
+    ],
+    [
+     "Muka",
+     "nggak wajib"
+    ]
+   ],
+   "note": "Bisa dipakai ulang buat produk lain."
+  },
+  "prompt": {
+   "text": "Produk: [nama & keunggulan]. Target: [pembeli]. Buatkan script video TikTok 30 detik tanpa wajah: hook 3 detik pertama, 3 scene dengan detik dan apa yang direkam, teks di layar tiap scene, dan penutup ajakan beli. Kasih 3 alternatif hook.",
+   "share": "Kirim ke temen yang pengen jualan lewat video 🎬"
+  },
+  "cap": "Video jualan nggak harus pakai muka. Minta AI bikin script per detik. Prompt-nya di slide terakhir.\n#videojualan #tiktokshop #tipsai #promptai #umkm",
+  "title": "Script video jualan 30 detik",
+  "when": "2026-11-30T10:00:00"
+ },
+ "n08-hook10": {
+  "orange": true,
+  "cover": {
+   "a": "10 hook",
+   "b": "dalam 10 detik.",
+   "ico": "🪝",
+   "t": "Konten nail art",
+   "q": "Bikin hook yang bikin berhenti.",
+   "ans": "10 opsi hook, tinggal pilih ✓"
+  },
+  "bukti": {
+   "me": "Konten: tutorial french tip 5 menit. Bikinin 10 hook pembuka yang bikin orang berhenti scroll.",
+   "ai": "1. \"French tip salon? Aku bikin 5 menit\"<br>2. \"Jangan beli press-on sebelum lihat ini\"<br>3. \"Modal Rp50rb, kuku kayak ke salon\"<br>4. \"Ternyata ini rahasia garis rapi\"<br>… sampai 10."
+  },
+  "masalah": {
+   "a": "Kontennya bagus,",
+   "b": "pembukanya lemah.",
+   "items": [
+    [
+     "😴",
+     "Dibuka pakai \"Hai guys\""
+    ],
+    [
+     "⏭️",
+     "Langsung di-skip"
+    ],
+    [
+     "📉",
+     "Views mentok"
+    ]
+   ]
+  },
+  "trik": {
+   "a": "Bikin 10,",
+   "b": "pakai yang terbaik.",
+   "body": "Jelaskan isi kontenmu ke AI. Minta <b style=\"color:#E63B2E\">10 hook dengan gaya beda</b>: pertanyaan, larangan, angka, rahasia, perbandingan.",
+   "note": "Coba 2 hook berbeda untuk konten yang sama."
+  },
+  "cek": [
+   "Kalimat pertamamu bikin penasaran?",
+   "Pernah tes 2 hook berbeda?"
+  ],
+  "hasil": {
+   "a": "Satu ide,",
+   "b": "10 pintu masuk.",
+   "rows": [
+    [
+     "Larangan",
+     "\"Jangan … sebelum …\""
+    ],
+    [
+     "Angka",
+     "\"5 menit\", \"Rp50rb\""
+    ],
+    [
+     "Rahasia",
+     "\"Ternyata …\""
+    ],
+    [
+     "Tes",
+     "2 hook, lihat views"
+    ]
+   ],
+   "note": "Hook yang menang, pakai lagi polanya."
+  },
+  "prompt": {
+   "text": "Kontenku tentang: [isi konten]. Target penonton: [siapa]. Buatkan 10 hook pembuka maks 8 kata, masing-masing gaya berbeda (pertanyaan, larangan, angka, rahasia, perbandingan, before-after). Tandai 3 yang paling kuat dan jelaskan kenapa.",
+   "share": "Kirim ke temen yang views-nya mentok 🪝"
+  },
+  "cap": "Kalimat pertama nentuin orang nonton atau skip. Minta AI 10 opsi, pilih yang terbaik. Prompt-nya di slide terakhir.\n#hook #kontenkreator #tipsai #promptai #tiktok",
+  "title": "10 hook dalam 10 detik",
+  "when": "2026-11-30T19:00:00"
+ },
+ "n09-namavarian": {
+  "orange": false,
+  "cover": {
+   "a": "Bingung kasih",
+   "b": "nama produk?",
+   "ico": "🏷️",
+   "t": "Gelato rasa baru",
+   "q": "Kelapa + gula aren.",
+   "ans": "10 nama yang gampang diingat ✓"
+  },
+  "bukti": {
+   "me": "Gelato rasa kelapa + gula aren. Bikin 10 nama yang gampang diingat, nuansa lokal, maksimal 2 kata.",
+   "ai": "1. <b>Kelapa Senja</b><br>2. Aren Klasik<br>3. Es Desa<br>4. Nyiur Manis<br>5. Kopyor Aren<br>… + alasan tiap nama & cek kata yang mirip merek lain."
+  },
+  "masalah": {
+   "a": "Produknya enak,",
+   "b": "namanya bikin lupa.",
+   "items": [
+    [
+     "🔤",
+     "Nama terlalu panjang"
+    ],
+    [
+     "😐",
+     "Sama kayak toko lain"
+    ],
+    [
+     "🗣️",
+     "Susah diucapin"
+    ]
+   ]
+  },
+  "trik": {
+   "a": "Kasih rasa,",
+   "b": "AI kasih nama.",
+   "body": "Jelaskan rasa, bahan, dan target pembeli. Minta <b style=\"color:#E63B2E\">10 nama maks 2 kata</b> plus alasannya. Pilih 3, tanya pelanggan favoritnya.",
+   "note": "Cek dulu di marketplace, jangan sama dengan merek lain."
+  },
+  "cek": [
+   "Nama produkmu gampang diingat?",
+   "Udah dicek nggak bentrok merek lain?"
+  ],
+  "hasil": {
+   "a": "Dari 10 nama,",
+   "b": "pilih lewat polling.",
+   "rows": [
+    [
+     "Panjang",
+     "maks 2 kata"
+    ],
+    [
+     "Rasa",
+     "lokal / hangat"
+    ],
+    [
+     "Cek",
+     "marketplace & IG"
+    ],
+    [
+     "Pilih",
+     "polling story"
+    ]
+   ],
+   "note": "Pembeli ikut milih = mereka penasaran nyobain."
+  },
+  "prompt": {
+   "text": "Produk baruku: [jenis produk, rasa/bahan, target pembeli, kesan yang diinginkan]. Buatkan 10 nama produk maksimal 2 kata, gampang diucapkan, bernuansa [lokal/modern]. Untuk tiap nama, beri alasan singkat. Hindari nama yang sudah umum dipakai merek besar.",
+   "share": "Kirim ke temen yang lagi siapin produk baru 🏷️"
+  },
+  "cap": "Nama produk yang gampang diingat bikin orang balik lagi. Minta AI 10 opsi, pembeli yang pilih. Prompt-nya di slide terakhir.\n#produkbaru #branding #tipsai #promptai #umkm",
+  "title": "Nama produk pakai AI",
+  "when": "2026-12-01T19:00:00"
+ },
+ "n10-promo1212": {
+  "orange": true,
+  "cover": {
+   "a": "Promo 12.12",
+   "b": "udah siap?",
+   "ico": "🛒",
+   "t": "Toko nail art online",
+   "q": "Bikin rencana promo 12.12.",
+   "ans": "Rencana 7 hari + jadwal konten ✓"
+  },
+  "bukti": {
+   "me": "Tokoku nail supplies. Bikin rencana promo 12.12 yang nggak bikin rugi, plus jadwal konten H-7 sampai H.",
+   "ai": "<b>H-7:</b> teaser \"ada yang spesial\"<br><b>H-5:</b> bundling starter kit<br><b>H-3:</b> countdown + produk terlaris<br><b>H-1:</b> reminder & voucher toko<br><b>H:</b> live / flash 2 jam<br><b>Cek margin:</b> diskon maks 15% biar aman."
+  },
+  "masalah": {
+   "a": "Ikut harbolnas,",
+   "b": "tapi dadakan.",
+   "items": [
+    [
+     "⏳",
+     "Mikir promo H-1"
+    ],
+    [
+     "💸",
+     "Diskon gede, untung tipis"
+    ],
+    [
+     "📭",
+     "Pembeli nggak tahu ada promo"
+    ]
+   ]
+  },
+  "trik": {
+   "a": "Rencanain",
+   "b": "seminggu sebelumnya.",
+   "body": "Kasih AI harga, modal, dan produk andalan. Minta <b style=\"color:#E63B2E\">rencana promo + jadwal konten H-7 sampai H</b>, lengkap batas diskon yang masih untung.",
+   "note": "Mulai teaser dari sekarang biar pembeli nunggu."
+  },
+  "cek": [
+   "Udah tahu batas diskon yang aman?",
+   "Udah ada jadwal konten sebelum 12.12?"
+  ],
+  "hasil": {
+   "a": "Satu rencana,",
+   "b": "7 hari konten.",
+   "rows": [
+    [
+     "H-7",
+     "teaser"
+    ],
+    [
+     "H-5",
+     "bundling"
+    ],
+    [
+     "H-3",
+     "countdown"
+    ],
+    [
+     "H",
+     "flash sale"
+    ]
+   ],
+   "note": "Konten sebelum hari H yang bikin pembeli siap belanja."
+  },
+  "prompt": {
+   "text": "Tokoku jual [produk]. Harga & modal: [daftar]. Buatkan rencana promo 12.12: bentuk promo yang marginnya tetap minimal [X]%, jadwal konten H-7 sampai hari H (tiap hari 1 ide konten + caption singkat), dan 3 hal yang perlu disiapkan (stok, kemasan, admin).",
+   "share": "Kirim ke temen yang mau ikut 12.12 🛒"
+  },
+  "cap": "12.12 tinggal sebentar lagi. Rencanain promo & kontennya dari sekarang, biar nggak rugi. Prompt-nya di slide terakhir.\n#1212 #harbolnas #tipsai #promptai #jualanonline",
+  "title": "Promo 12.12 udah siap?",
+  "when": "2026-12-02T10:00:00"
+ },
+ "n11-broadcast": {
+  "orange": false,
+  "cover": {
+   "a": "Broadcast WA",
+   "b": "yang nggak di-skip.",
+   "ico": "📣",
+   "t": "Pelanggan lama",
+   "q": "Mau kabarin rasa baru.",
+   "ans": "Pesan singkat, personal, ada alasan buka ✓"
+  },
+  "bukti": {
+   "me": "Mau broadcast WA ke pelanggan lama: ada rasa baru salted caramel, cuma 30 cup. Bikin yang nggak kayak spam.",
+   "ai": "Hai kak [nama] 👋 Inget pistachio yang kakak suka? Minggu ini ada <b>salted caramel</b>, aku bikin cuma 30 cup. Mau aku sisihin 1 buat kakak? Bales \"MAU\" aja ya."
+  },
+  "masalah": {
+   "a": "Broadcast dikirim,",
+   "b": "dibaca doang.",
+   "items": [
+    [
+     "📢",
+     "Isinya promo semua"
+    ],
+    [
+     "🤖",
+     "Kerasa kayak robot"
+    ],
+    [
+     "🔕",
+     "Pelanggan mute"
+    ]
+   ]
+  },
+  "trik": {
+   "a": "Pendek, personal,",
+   "b": "ada alasan.",
+   "body": "Kasih AI info pelanggan & kabar barumu. Minta pesan <b style=\"color:#E63B2E\">maks 3 kalimat, pakai nama, ada alasan kenapa sekarang</b>, dan 1 cara bales yang gampang.",
+   "note": "Kirim ke pelanggan yang memang pernah beli."
+  },
+  "cek": [
+   "Broadcast-mu pakai nama pelanggan?",
+   "Ada alasan buat bales sekarang?"
+  ],
+  "hasil": {
+   "a": "Bukan spam,",
+   "b": "tapi kabar.",
+   "rows": [
+    [
+     "Pembuka",
+     "sapa pakai nama"
+    ],
+    [
+     "Isi",
+     "1 kabar baru"
+    ],
+    [
+     "Alasan",
+     "stok terbatas"
+    ],
+    [
+     "Ajakan",
+     "bales 1 kata"
+    ]
+   ],
+   "note": "Jangan tiap hari. Seminggu sekali cukup."
+  },
+  "prompt": {
+   "text": "Aku mau kirim broadcast WhatsApp ke pelanggan lama tentang: [kabar/produk baru]. Buatkan 3 versi pesan maks 3 kalimat: sapa pakai [nama], hubungkan dengan pembelian sebelumnya, beri alasan kenapa sekarang (stok/waktu), dan ajakan balas dengan 1 kata. Nada: hangat, bukan iklan.",
+   "share": "Kirim ke temen yang broadcast-nya sering dicuekin 📣"
+  },
+  "cap": "Broadcast WA yang kerasa personal lebih sering dibalas. AI bantu tulis 3 versi. Prompt-nya di slide terakhir.\n#whatsappbisnis #pelanggan #tipsai #promptai #umkm",
+  "title": "Broadcast WA yang nggak di-skip",
+  "when": "2026-12-02T19:00:00"
+ },
+ "n12-sopkaryawan": {
+  "orange": true,
+  "cover": {
+   "a": "SOP karyawan",
+   "b": "dari voice note.",
+   "ico": "🎙️",
+   "t": "Karyawan baru",
+   "q": "Cara bikin gelato cup.",
+   "ans": "SOP langkah demi langkah ✓"
+  },
+  "bukti": {
+   "me": "[transkrip voice note] \"Jadi kalau ada order, cup-nya dulu, terus timbang 100 gram, jangan lupa topping, terus tutup, kasih stiker…\" Rapihin jadi SOP.",
+   "ai": "<b>SOP Order Gelato Cup</b><br>1. Siapkan cup & tutup<br>2. Timbang gelato <b>100 g</b><br>3. Tambah topping sesuai pesanan<br>4. Tutup rapat, tempel stiker<br>5. Cek ulang pesanan sebelum diserahkan"
+  },
+  "masalah": {
+   "a": "Ngajarin karyawan",
+   "b": "berulang-ulang.",
+   "items": [
+    [
+     "🔁",
+     "Jelasin hal yang sama terus"
+    ],
+    [
+     "🎲",
+     "Hasil tiap orang beda"
+    ],
+    [
+     "📝",
+     "Males nulis SOP"
+    ]
+   ]
+  },
+  "trik": {
+   "a": "Ngomong aja,",
+   "b": "AI yang nulis.",
+   "body": "Rekam voice note jelasin caranya, ubah jadi teks. Minta AI <b style=\"color:#E63B2E\">susun jadi SOP bernomor</b> + daftar cek. Tempel di dinding dapur.",
+   "note": "Coba dulu ke 1 karyawan, perbaiki bagian yang bingung."
+  },
+  "cek": [
+   "Punya SOP tertulis buat tugas harian?",
+   "Karyawan baru bisa kerja tanpa nanya terus?"
+  ],
+  "hasil": {
+   "a": "Sekali rekam,",
+   "b": "dipakai terus.",
+   "rows": [
+    [
+     "Rekam",
+     "3 menit voice note"
+    ],
+    [
+     "Ubah",
+     "jadi teks"
+    ],
+    [
+     "AI",
+     "SOP + checklist"
+    ],
+    [
+     "Tempel",
+     "di area kerja"
+    ]
+   ],
+   "note": "Bisa juga buat SOP packing & admin chat."
+  },
+  "prompt": {
+   "text": "Ini transkrip penjelasanku tentang [tugas]: [paste]. Susun jadi SOP untuk karyawan baru: langkah bernomor, kalimat pendek, sebutkan takaran/angka yang penting, dan tambahkan checklist 5 poin di akhir. Tandai bagian yang belum jelas supaya aku lengkapi.",
+   "share": "Kirim ke temen yang capek ngajarin karyawan 🎙️"
+  },
+  "cap": "Nggak sempat nulis SOP? Rekam voice note, AI yang rapihin jadi langkah-langkah. Prompt-nya di slide terakhir.\n#sop #karyawan #tipsai #promptai #umkm",
+  "title": "SOP karyawan dari voice note",
+  "when": "2026-12-03T19:00:00"
+ },
+ "n13-biotoko": {
+  "orange": false,
+  "cover": {
+   "a": "Bio toko",
+   "b": "yang bikin yakin.",
+   "ico": "📝",
+   "t": "Profil IG toko gelato",
+   "q": "Bio-nya cuma nama toko.",
+   "ans": "Bio 4 baris: siapa, apa, di mana, cara order ✓"
+  },
+  "bukti": {
+   "me": "Bio IG tokoku cuma \"Gelato homemade\". Bikin bio yang jelas: produk, keunggulan, area kirim, cara order.",
+   "ai": "🍨 Gelato homemade, tanpa pengawet<br>📍 Surabaya Barat · kirim pakai ice pack<br>🕙 Buka 10.00–21.00<br>👇 Order via WhatsApp"
+  },
+  "masalah": {
+   "a": "Profil dibuka,",
+   "b": "tapi nggak order.",
+   "items": [
+    [
+     "❓",
+     "Nggak jelas jual apa"
+    ],
+    [
+     "📍",
+     "Lokasi nggak ada"
+    ],
+    [
+     "🔗",
+     "Cara order bikin bingung"
+    ]
+   ]
+  },
+  "trik": {
+   "a": "4 baris",
+   "b": "yang jawab semua.",
+   "body": "Kasih AI info tokomu. Minta <b style=\"color:#E63B2E\">bio 4 baris</b>: jual apa, kenapa beda, di mana/area kirim, cara order. Pakai emoji secukupnya.",
+   "note": "Samakan bio di IG, TikTok, dan marketplace."
+  },
+  "cek": [
+   "Orang baru langsung paham kamu jual apa?",
+   "Cara order-nya jelas?"
+  ],
+  "hasil": {
+   "a": "Bio rapi,",
+   "b": "orang langsung paham.",
+   "rows": [
+    [
+     "Baris 1",
+     "jual apa"
+    ],
+    [
+     "Baris 2",
+     "kenapa beda"
+    ],
+    [
+     "Baris 3",
+     "lokasi & jam"
+    ],
+    [
+     "Baris 4",
+     "cara order"
+    ]
+   ],
+   "note": "Ganti tiap ada promo besar."
+  },
+  "prompt": {
+   "text": "Tokoku: [jual apa], keunggulan: [x], lokasi/area kirim: [x], jam buka: [x], cara order: [WA/link]. Buatkan 3 versi bio Instagram maks 150 karakter, 4 baris, pakai 1 emoji per baris, bahasa santai.",
+   "share": "Kirim ke temen yang bio tokonya masih kosong 📝"
+  },
+  "cap": "Bio toko itu etalase pertama. Bikin 4 baris yang langsung jawab: jual apa, di mana, cara order. Prompt-nya di slide terakhir.\n#bioinstagram #olshop #tipsai #promptai #umkm",
+  "title": "Bio toko yang bikin yakin",
+  "when": "2026-12-04T10:00:00"
+ },
+ "n14-1foto5konten": {
+  "orange": true,
+  "cover": {
+   "a": "1 foto produk,",
+   "b": "jadi 5 konten.",
+   "ico": "🔄",
+   "t": "Foto gel polish nude",
+   "q": "Cuma punya 1 foto.",
+   "ans": "5 ide konten dari foto yang sama ✓"
+  },
+  "bukti": {
+   "me": "Aku cuma punya 1 foto produk gel polish nude. Bikin 5 ide konten berbeda dari foto itu.",
+   "ai": "1. <b>Carousel:</b> 3 cara pakai warna nude<br>2. <b>Story polling:</b> nude vs pink?<br>3. <b>Quote:</b> \"Kuku rapi = pede\"<br>4. <b>Before–after</b> pakai foto pelanggan<br>5. <b>Video teks:</b> 3 alasan nude laris"
+  },
+  "masalah": {
+   "a": "Foto terbatas,",
+   "b": "konten jadi kosong.",
+   "items": [
+    [
+     "📷",
+     "Nggak sempat foto baru"
+    ],
+    [
+     "🔁",
+     "Upload foto yang sama terus"
+    ],
+    [
+     "🫥",
+     "Feed kelihatan sepi"
+    ]
+   ]
+  },
+  "trik": {
+   "a": "Satu foto,",
+   "b": "banyak sudut cerita.",
+   "body": "Upload fotonya ke AI. Minta <b style=\"color:#E63B2E\">5 format konten berbeda</b> dari foto itu: carousel, story, quote, before–after, video teks.",
+   "note": "Ganti teks & sudut cerita, bukan fotonya."
+  },
+  "cek": [
+   "Punya stok konten seminggu ke depan?",
+   "Satu foto udah dipakai lebih dari 1 kali?"
+  ],
+  "hasil": {
+   "a": "Satu foto,",
+   "b": "satu minggu konten.",
+   "rows": [
+    [
+     "Senin",
+     "carousel tips"
+    ],
+    [
+     "Rabu",
+     "story polling"
+    ],
+    [
+     "Jumat",
+     "video teks"
+    ],
+    [
+     "Foto baru",
+     "nggak wajib"
+    ]
+   ],
+   "note": "Simpan ide yang ramai, ulangi bulan depan."
+  },
+  "prompt": {
+   "text": "Ini foto produkku [upload]. Produk: [nama & keunggulan]. Buatkan 5 ide konten berbeda dari foto ini (carousel, story interaktif, quote, before-after, video teks). Untuk tiap ide: judul, isi singkat, dan caption 1 kalimat.",
+   "share": "Kirim ke temen yang kehabisan ide konten 🔄"
+  },
+  "cap": "Nggak perlu foto baru tiap hari. Satu foto bisa jadi 5 konten beda. Prompt-nya di slide terakhir.\n#ideakonten #sosmed #tipsai #promptai #jualanonline",
+  "title": "1 foto jadi 5 konten",
+  "when": "2026-12-04T19:00:00"
+ },
+ "n15-hargakompetitor": {
+  "orange": false,
+  "cover": {
+   "a": "Harga kemahalan",
+   "b": "atau kemurahan?",
+   "ico": "⚖️",
+   "t": "Gelato box 500ml",
+   "q": "Kompetitor jual 60–95rb.",
+   "ans": "Posisi harga + alasannya ✓"
+  },
+  "bukti": {
+   "me": "Gelato box 500ml, modalku 38rb. Kompetitor: 60rb, 72rb, 85rb, 95rb. Harga berapa yang pas?",
+   "ai": "<b>Rata-rata pasar:</b> Rp78rb<br><b>Saran:</b> <b>Rp79rb</b> (posisi tengah, margin 52%)<br><b>Kalau mau premium:</b> Rp89rb + kemasan ice pack & kartu ucapan<br><b>Jangan</b> di bawah Rp65rb, margin turun jauh."
+  },
+  "masalah": {
+   "a": "Pasang harga",
+   "b": "pakai feeling.",
+   "items": [
+    [
+     "😰",
+     "Takut kemahalan"
+    ],
+    [
+     "📉",
+     "Kemurahan, untung tipis"
+    ],
+    [
+     "🤷",
+     "Nggak tahu harga pasar"
+    ]
+   ]
+  },
+  "trik": {
+   "a": "Lihat pasar,",
+   "b": "tentukan posisi.",
+   "body": "Kumpulkan 4–6 harga kompetitor dan modalmu. Minta AI hitung <b style=\"color:#E63B2E\">rata-rata pasar, margin, dan 2 pilihan posisi</b> (tengah atau premium).",
+   "note": "Kalau mau lebih mahal, kasih alasan yang kelihatan."
+  },
+  "cek": [
+   "Tahu harga rata-rata pasarmu?",
+   "Tahu margin di harga sekarang?"
+  ],
+  "hasil": {
+   "a": "Harga yang",
+   "b": "bisa kamu jelasin.",
+   "rows": [
+    [
+     "Modal",
+     "Rp38rb"
+    ],
+    [
+     "Rata-rata pasar",
+     "Rp78rb"
+    ],
+    [
+     "Posisi tengah",
+     "Rp79rb"
+    ],
+    [
+     "Margin",
+     "52%"
+    ]
+   ],
+   "note": "Harga premium butuh bukti: kemasan, rasa, layanan."
+  },
+  "prompt": {
+   "text": "Produkku [nama], modal per unit [Rp]. Harga kompetitor: [daftar]. Hitung rata-rata harga pasar, lalu beri 2 opsi harga (posisi tengah & premium) lengkap dengan margin dalam persen. Untuk opsi premium, sebutkan 3 nilai tambah yang perlu aku berikan.",
+   "share": "Kirim ke temen yang masih galau pasang harga ⚖️"
+  },
+  "cap": "Harga jangan cuma ikut feeling. Bandingin pasar, hitung margin, baru tentuin posisi. Prompt-nya di slide terakhir.\n#hargajual #umkm #tipsai #promptai #jualanonline",
+  "title": "Harga kemahalan atau kemurahan?",
+  "when": "2026-12-05T19:00:00"
  }
 }
