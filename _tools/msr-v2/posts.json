@@ -288,145 +288,143 @@
   },
   "orange": true
  },
- "m19-danadarurat": {
-  "photo": "eif",
+ "m19-balaschat": {
   "cover": {
-   "a": "Dana darurat",
-   "b": "butuh berapa?",
-   "ico": "🛟",
-   "t": "Pengeluaran Rp4 jt",
-   "q": "Dana darurat-ku berapa?",
-   "ans": "Target <b>Rp24 jt</b>, kekumpul 16 bulan ✓"
+   "a": "Chat numpuk?",
+   "b": "AI yang draft.",
+   "ico": "💬",
+   "t": "Toko nail art online",
+   "q": "Kak, nude ready? Ongkir ke Bandung?",
+   "ans": "Draft balasan siap kirim, tinggal cek ✓"
   },
   "bukti": {
-   "me": "Pengeluaranku Rp4 juta/bulan, kerja sendiri. Dana darurat butuh berapa?",
-   "ai": "<b>Target:</b> 6× pengeluaran = Rp24 jt (usaha sendiri lebih aman 6×)<br><b>Nabung Rp1 jt/bulan:</b> 24 bulan<br><b>Nabung Rp1,5 jt/bulan:</b> 16 bulan<br><b>Simpan</b> di rekening terpisah yang gampang dicairkan."
+   "me": "Info tokoku: gel polish Rp35rb/botol, warna nude ready, ongkir Bandung Rp12rb (2–3 hari). Pembeli tanya: \"Kak nude ready? Ongkir ke Bandung?\"",
+   "ai": "Halo kak! 💅 Warna nude <b>ready</b> ya, Rp35.000/botol. Ongkir ke Bandung <b>Rp12.000</b>, sampai 2–3 hari. Mau langsung aku buatin pesanannya, kak?"
   },
   "masalah": {
-   "a": "Nabung tanpa",
-   "b": "target jelas.",
+   "a": "Pertanyaannya",
+   "b": "itu-itu aja.",
    "items": [
     [
-     "🤷",
-     "Nggak tahu cukupnya berapa"
+     "🔁",
+     "Pertanyaan sama diulang tiap hari"
     ],
     [
-     "🧋",
-     "Kepakai buat jajan"
+     "🌙",
+     "Telat bales, pembeli kabur"
     ],
     [
-     "🚨",
-     "Pas butuh mendadak, nggak ada"
+     "😵",
+     "Jawaban beda-beda tiap admin"
     ]
    ]
   },
   "trik": {
-   "a": "Hitung dari",
-   "b": "pengeluaranmu.",
-   "body": "Patokan umum: <b style='color:#E63B2E'>3–6 kali pengeluaran bulanan</b>. AI hitung targetnya dan berapa lama terkumpul dari tabunganmu sekarang.",
-   "note": "Simpan terpisah dari rekening harian."
+   "a": "Bikin contekan",
+   "b": "buat AI.",
+   "body": "Tulis sekali info tokomu: <b style='color:#E63B2E'>harga, stok, ongkir, jam buka, cara order</b>. Tiap ada chat, paste pertanyaannya ke AI bareng contekan itu.",
+   "note": "Cek harga & stok sebelum kirim."
   },
   "cek": [
-   "Punya dana darurat 3× pengeluaran?",
-   "Rekeningnya udah dipisah?"
+   "Punya daftar jawaban FAQ toko?",
+   "Chat dibalas di bawah 1 jam?"
   ],
   "hasil": {
-   "a": "Target jelas,",
-   "b": "waktunya jelas.",
+   "a": "Satu contekan,",
+   "b": "puluhan balasan.",
    "rows": [
     [
-     "Pengeluaran",
-     "Rp4 jt/bulan"
+     "Tanya stok & harga",
+     "siap kirim"
     ],
     [
-     "Target (6×)",
-     "Rp24 jt"
+     "Tanya ongkir",
+     "siap kirim"
     ],
     [
-     "Nabung Rp1 jt/bulan",
-     "24 bulan"
+     "Komplain paket telat",
+     "draft sopan"
     ],
     [
-     "Nabung Rp1,5 jt/bulan",
-     "16 bulan"
+     "Nada balasan",
+     "sama tiap admin"
     ]
    ],
-   "note": "Mulai kecil tetap lebih baik dari nunggu."
+   "note": "Kamu tinggal cek, lalu kirim."
   },
   "prompt": {
-   "text": "Pengeluaran bulananku [Rp], tanggunganku [sendiri / keluarga], kerja [karyawan / usaha sendiri]. Hitung target dana darurat yang cocok buat aku, berapa lama terkumpul kalau aku nabung [Rp]/bulan, dan 3 cara mempercepatnya tanpa ngorbanin kebutuhan pokok.",
-   "share": "Kirim ke temen yang belum punya dana darurat 🛟"
+   "text": "Kamu admin toko online [jenis toko]. Info toko: [harga, stok, ongkir, jam buka, cara order, kebijakan retur]. Tiap aku kirim pertanyaan pembeli, buatkan balasan ramah dan singkat (maks 3 kalimat), bahasa santai, dan ajak lanjut order. Kalau infonya nggak ada di data toko, jawab \"aku cek dulu ya kak\", jangan mengarang.",
+   "share": "Kirim ke temen yang chat tokonya numpuk 💬"
   }
  },
- "m20-cicilan": {
-  "photo": "stu",
+ "m20-rekapjualan": {
+  "orange": true,
   "cover": {
-   "a": "Cicilan kecil,",
-   "b": "totalnya besar.",
-   "ico": "📱",
-   "t": "HP Rp3 juta",
-   "q": "Cicil 12× Rp300rb, oke?",
-   "ans": "Total <b>Rp3,6 jt</b>. Lebih mahal <b style='color:#E63B2E'>20%</b> ✗"
+   "a": "Rekap jualan",
+   "b": "cuma 1 menit.",
+   "ico": "📊",
+   "t": "File pesanan bulan ini",
+   "q": "Produk mana yang laris?",
+   "ans": "Top 3 laris + 2 yang mandek ✓"
   },
   "bukti": {
-   "me": "HP harga tunai Rp3 juta. Cicilan 12× Rp300rb. Hitung total.",
-   "ai": "<b>Total dibayar:</b> 12 × Rp300rb = Rp3,6 jt<br><b>Lebih mahal:</b> Rp600rb (20%)<br><b>Belum termasuk</b> biaya admin &amp; denda telat<br><b>Alternatif:</b> nabung Rp300rb/bulan, 10 bulan bisa beli tunai."
+   "me": "[upload file pesanan bulan ini] Rekap: produk paling laris, yang nggak laku, dan jam paling rame.",
+   "ai": "<b>Paling laris:</b> gel polish nude (142), top coat (98), remover (75)<br><b>Mandek:</b> glitter set (3), stamping plate (0)<br><b>Jam ramai:</b> 19.00–22.00<br><b>Saran:</b> bundling glitter set + gel polish nude."
   },
   "masalah": {
-   "a": "Lihatnya cuma",
-   "b": "per bulan.",
+   "a": "Jualan jalan,",
+   "b": "datanya nganggur.",
    "items": [
     [
-     "👀",
-     "Cuma lihat angka per bulan"
+     "📂",
+     "File pesanan cuma numpuk"
     ],
     [
-     "🫥",
-     "Biaya admin nggak kelihatan"
+     "🤔",
+     "Nggak tahu produk yang mandek"
     ],
     [
-     "⏰",
-     "Denda telat bayar lumayan"
+     "📦",
+     "Restock pakai feeling"
     ]
    ]
   },
   "trik": {
-   "a": "Paste skemanya,",
-   "b": "suruh AI hitung.",
-   "body": "Harga tunai, cicilan per bulan, tenor, biaya admin. AI hitung <b style='color:#E63B2E'>total yang kamu bayar</b> dan berapa persen lebih mahal.",
-   "note": "Baca juga syarat denda &amp; biaya lain."
+   "a": "Upload filenya,",
+   "b": "AI yang baca.",
+   "body": "Download file pesanan dari seller centre (Excel/CSV). Upload ke AI yang bisa baca file, minta <b style='color:#E63B2E'>rekap produk, jam ramai, dan saran restock</b>.",
+   "note": "Hapus kolom nama & alamat pembeli dulu."
   },
   "cek": [
-   "Tahu total yang kamu bayar?",
-   "Udah cek biaya admin &amp; denda?"
+   "Tahu 3 produk terlaris bulan ini?",
+   "Tahu produk yang nggak laku?"
   ],
   "hasil": {
-   "a": "HP Rp3 juta,",
-   "b": "jadi segini.",
+   "a": "Restock pakai",
+   "b": "data, bukan feeling.",
    "rows": [
     [
-     "Harga tunai",
-     "Rp3 jt"
+     "Restock duluan",
+     "gel polish nude"
     ],
     [
-     "Cicilan 12×",
-     "Rp300rb"
+     "Jam promo",
+     "19.00–22.00"
     ],
     [
-     "Total dibayar",
-     "Rp3,6 jt"
+     "Produk mandek",
+     "glitter set"
     ],
     [
-     "Lebih mahal",
-     "Rp600rb (20%)"
+     "Langkah",
+     "bundling, jangan restock"
     ]
    ],
-   "note": "Kalau bisa nabung 10 bulan, beli tunai."
+   "note": "Uang nggak nyangkut di stok mati."
   },
   "prompt": {
-   "text": "Aku mau beli [barang] harga tunai [Rp]. Pilihan cicilan: [tenor, cicilan per bulan, biaya admin]. Hitung total yang aku bayar, selisihnya dari harga tunai dalam rupiah dan persen. Bandingkan dengan kalau aku nabung dulu [Rp]/bulan.",
-   "share": "Kirim ke temen yang hobi checkout pakai cicilan 🛒"
-  },
-  "orange": true
+   "text": "Ini file pesanan tokoku bulan [bulan]. Rekap: 5 produk terlaris (jumlah & omzet), produk yang terjual kurang dari 5, serta jam & hari paling ramai. Lalu kasih saran: produk mana yang restock duluan, mana yang sebaiknya dibundling atau distop. Tampilkan dalam tabel.",
+   "share": "Kirim ke temen yang jualan di marketplace 📊"
+  }
  }
 }
