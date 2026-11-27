@@ -104,4 +104,4 @@ async def main(slug='t01-timsosmed'):
             await pg.evaluate(gen.FIT); await pg.wait_for_timeout(250)
             await pg.screenshot(path=f'{gen.HERE}/out/{slug}/slide-{i}.png')
         await b.close()
-asyncio.run(main())
+if __name__=="__main__": asyncio.run(main())
